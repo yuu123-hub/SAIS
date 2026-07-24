@@ -11,6 +11,7 @@ $required = @(
     '02_institution/Sheffield_GenAI_Reference.md',
     '03_workflows/Task_Router.md',
     '03_workflows/Project_Lifecycle.md',
+    '03_workflows/Literature_Search_and_Synthesis.md',
     '03_workflows/Chinese_to_English_Drafting.md',
     '03_workflows/Research_Design.md',
     '03_workflows/dissertation_tracks/Academic_Research.md',
@@ -19,10 +20,13 @@ $required = @(
     '04_templates/AI_Use_Record.md',
     '04_templates/Source_Verification_Log.md',
     '04_templates/Submission_Readiness.md',
+    '04_templates/research/Search_Log.md',
+    '04_templates/research/Claim_Evidence_Matrix.md',
     '04_templates/research/Literature_Synthesis.md',
     '04_templates/knowledge_objects/Theory_Card.md',
     '07_quality_control/Examiner_Review.md',
     '07_quality_control/test_cases/Dissertation_Ethics.md',
+    '07_quality_control/test_cases/Unsupported_Literature_Gap.md',
     'scripts/New-SAISProject.ps1'
 )
 

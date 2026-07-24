@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.3.0 — 24 July 2026
+
+- Added exploratory, structured-coursework, dissertation, and systematic-review search modes.
+- Added reproducible search logging, screening decisions, search limitations, and stop rules.
+- Added claim–evidence mapping and strengthened cross-source literature synthesis.
+- Added governance protection against unsupported claims that no literature exists.
+- Extended new-project scaffolds with research logs and synthesis templates.
+
 ## v1.2.0 — 24 July 2026
 
 - Added an end-to-end assessed-project lifecycle with explicit state gates.

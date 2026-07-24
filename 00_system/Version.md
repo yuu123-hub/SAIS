@@ -1,7 +1,7 @@
 # Version
 
-- System: SAIS v1.2.0
-- Status: Operational baseline with assessed-project lifecycle and project scaffolding
+- System: SAIS v1.3.0
+- Status: Operational baseline with reproducible literature search and synthesis
 - Updated: 24 July 2026
 
 ## Change policy

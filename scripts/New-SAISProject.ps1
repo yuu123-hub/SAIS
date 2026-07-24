@@ -30,8 +30,11 @@ if (Test-Path -LiteralPath $projectPath) {
 $contextTemplate = Join-Path $repositoryRoot '04_templates\Project_Context.md'
 $sourceTemplate = Join-Path $repositoryRoot '04_templates\Source_Verification_Log.md'
 $readinessTemplate = Join-Path $repositoryRoot '04_templates\Submission_Readiness.md'
+$searchTemplate = Join-Path $repositoryRoot '04_templates\research\Search_Log.md'
+$synthesisTemplate = Join-Path $repositoryRoot '04_templates\research\Literature_Synthesis.md'
+$claimEvidenceTemplate = Join-Path $repositoryRoot '04_templates\research\Claim_Evidence_Matrix.md'
 
-foreach ($template in @($contextTemplate, $sourceTemplate, $readinessTemplate)) {
+foreach ($template in @($contextTemplate, $sourceTemplate, $readinessTemplate, $searchTemplate, $synthesisTemplate, $claimEvidenceTemplate)) {
     if (-not (Test-Path -LiteralPath $template)) {
         throw "Required template is missing: $template"
     }
@@ -47,6 +50,9 @@ if ($PSCmdlet.ShouldProcess($projectPath, 'Create SAIS assessed-project scaffold
     Copy-Item -LiteralPath $contextTemplate -Destination (Join-Path $projectPath 'Project_Context.md')
     Copy-Item -LiteralPath $sourceTemplate -Destination (Join-Path $projectPath 'Source_Verification_Log.md')
     Copy-Item -LiteralPath $readinessTemplate -Destination (Join-Path $projectPath 'Submission_Readiness.md')
+    Copy-Item -LiteralPath $searchTemplate -Destination (Join-Path $projectPath 'notes\Search_Log.md')
+    Copy-Item -LiteralPath $synthesisTemplate -Destination (Join-Path $projectPath 'notes\Literature_Synthesis.md')
+    Copy-Item -LiteralPath $claimEvidenceTemplate -Destination (Join-Path $projectPath 'notes\Claim_Evidence_Matrix.md')
 
     $contextPath = Join-Path $projectPath 'Project_Context.md'
     $context = Get-Content -LiteralPath $contextPath -Raw -Encoding utf8
@@ -74,6 +80,9 @@ if ($PSCmdlet.ShouldProcess($projectPath, 'Create SAIS assessed-project scaffold
 
 - ``Project_Context.md`` — authoritative project state.
 - ``Source_Verification_Log.md`` — evidence and citation checks.
+- ``notes/Search_Log.md`` — reproducible literature-search history.
+- ``notes/Literature_Synthesis.md`` — cross-source synthesis.
+- ``notes/Claim_Evidence_Matrix.md`` — claim-to-source audit.
 - ``Submission_Readiness.md`` — final pre-submission gate.
 "@ | Set-Content -LiteralPath (Join-Path $projectPath 'README.md') -Encoding utf8
 

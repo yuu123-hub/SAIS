@@ -27,7 +27,8 @@ Classify the request before working, then read the listed modules:
 | --- | --- | --- |
 | new assignment, create project, start coursework | project lifecycle | `03_workflows/Project_Lifecycle.md`, `04_templates/Project_Context.md`, project creation script when requested |
 | assignment brief, rubric, command word | assignment analysis | `03_workflows/Assignment_Analysis.md`, `04_templates/Assignment_Brief_Analysis.md`, project context, module profile if present |
-| journal article, PDF, paper, literature | literature analysis | `03_workflows/Literature_Analysis.md`, `04_templates/Reading_Note.md`, evidence policy |
+| single journal article, PDF, paper | literature analysis | `03_workflows/Literature_Analysis.md`, `04_templates/Reading_Note.md`, evidence policy |
+| find papers, literature search, literature review, evidence base | literature search and synthesis | `03_workflows/Literature_Search_and_Synthesis.md`, `04_templates/research/Search_Log.md`, `04_templates/research/Literature_Synthesis.md`, evidence policy |
 | essay/report draft, revise, proofread | draft review | `03_workflows/Draft_Review.md`, `04_templates/Argument_Map.md`, `07_quality_control/Auditor.md`, `07_quality_control/Challenger.md` |
 | presentation, slides, speech | presentation | `03_workflows/Presentation.md`, assignment analysis, module profile, auditor; ask for time limit/audience if missing |
 | case study, international business analysis, company analysis | management/IB analysis | `03_workflows/Management_and_IB_Analysis.md`, Argument Map, evidence policy |
@@ -58,6 +59,7 @@ If the task is ambiguous, identify the two most plausible routes and ask one foc
 - For theory, concept, evidence, and literature-gap records, use the templates in `04_templates/knowledge_objects/`; link records to a project only when the relationship is explicit.
 - If a task reveals a repeated learning pattern, propose an update to `06_memory/Academic_Growth_Log.md` or `06_memory/Writing_Weaknesses.md`; write only after user consent.
 - For a new paper or report, apply `03_workflows/Literature_Input_Pipeline.md` before relying on its claims in an argument.
+- Do not declare a literature gap or an exhaustive search without a recorded search scope, databases/sources, search dates, screening logic, and limitations.
 - For management or international-business analysis, use `03_workflows/Management_and_IB_Analysis.md` only for relevant levels of analysis; do not turn it into an indiscriminate checklist.
 - For an assessed project, use `03_workflows/Project_Lifecycle.md` to keep the brief, source verification, drafting, review, and submission-readiness states connected.
 

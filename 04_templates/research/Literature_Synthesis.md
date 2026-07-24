@@ -6,9 +6,9 @@
 - Inclusion/exclusion logic:
 - Search sources and dates:
 
-| Citation key | Context/sample | Theory | Method | Main finding | Limitation | Debate/contradiction | Relevance to gap |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |  |  |
+| Citation key | Context/sample | Theory | Method/design | Main finding | Evidence direction | Quality/limitation | Debate/contradiction | Relevance to question/gap |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  | `Supports / Challenges / Mixed / Context` |  |  |  |
 
 ## Synthesis
 
@@ -17,5 +17,5 @@
 - Theoretical differences:
 - Methodological differences:
 - Justified research gap:
+- Search evidence supporting the gap:
 - Boundary conditions and unresolved uncertainty:
-

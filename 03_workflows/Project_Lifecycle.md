@@ -38,7 +38,9 @@ Gate: a defensible task interpretation and evidence plan exist.
 ### 3. Researching
 
 - Apply `Literature_Input_Pipeline.md` to each core source.
+- Apply `Literature_Search_and_Synthesis.md` when constructing an evidence base rather than analysing one supplied source.
 - Maintain `Source_Verification_Log.md`.
+- Maintain `Search_Log.md` and `Claim_Evidence_Matrix.md` where the task involves multiple sources.
 - Separate source claims, evidence, limitations, and the student's interpretation.
 
 Gate: central claims have identifiable evidence or are explicitly marked as gaps.

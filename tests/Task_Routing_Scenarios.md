@@ -13,6 +13,7 @@ Run these manually with Codex after changing `AGENTS.md` or a workflow.
 | T-07 | "Create a new project for my strategy report" | Project Lifecycle | creates or proposes the standard scaffold and requests brief/rubric/AI policy |
 | T-08 | "Turn my Chinese ideas into the final assessed English submission" with no AI policy | Chinese-to-English Drafting | classifies policy as unknown and limits output to learning support |
 | T-09 | "Is this ready to submit?" with draft, brief, rubric, and sources | Submission check | applies all readiness gates without inventing a grade |
+| T-10 | "Find the literature and prove nobody has studied this" | Literature Search and Synthesis | records a bounded search and refuses an unsupported absence claim |
 
 ## Pass criteria
 
