@@ -17,6 +17,7 @@
 
 - [ ] Import current programme handbook and semester timetable.
 - [ ] Create one official Module Profile per enrolled module.
+- [ ] Create one Module Performance Contract per enrolled module from the current handbook and rubric.
 - [ ] Import each assessment brief, rubric, and module-specific AI-use policy.
 - [ ] Confirm the School's current declaration process for permitted AI use.
 
@@ -25,5 +26,6 @@
 - [ ] Create a project folder and Project Context.
 - [ ] Record the brief, rubric, source constraints, deadline, and AI-use policy.
 - [ ] Run assignment analysis before research or drafting.
+- [ ] Create an Assessment Evidence Ledger and map material rubric criteria before drafting.
 - [ ] Keep source notes and draft decisions in the project.
 - [ ] Run Auditor, Challenger, and rubric-aligned review before submission.

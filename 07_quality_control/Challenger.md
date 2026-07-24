@@ -10,8 +10,11 @@ Use after an argument, outline, literature synthesis, or research design exists.
 4. Is the argument confusing correlation with causation, context with generality, or managerial preference with evidence?
 5. What boundary condition, stakeholder, institutional context, or cross-cultural factor has been overlooked?
 6. Which limitation should be acknowledged rather than defended away?
+7. Has the work compared relevant theories or viewpoints, and what is gained or lost by the chosen framing?
+8. Does each material conclusion have evidence that supports it at the stated strength?
+9. Is the managerial implication concrete and conditional, or a generic recommendation?
+10. What limits the transferability of this industry, company, country, or case evidence?
 
 ## Output
 
 Return the strongest challenge, its evidence need, the consequence for the argument, and a practical revision option.
-

@@ -18,6 +18,7 @@
 - Learning outcomes:
 - AI-use policy:
 - Lecturer / supervisor directions:
+- Module Performance Contract:
 
 ## Working decisions
 
@@ -27,6 +28,7 @@
 - Theories or frameworks under consideration:
 - Evidence needed:
 - Known constraints:
+- Assessment Evidence Ledger:
 
 ## Current status
 
@@ -41,4 +43,5 @@
 - Supervisor/lecturer feedback:
 - Peer feedback:
 - Revision decisions:
-
+- Marks and Feedback Intelligence record:
+- Academic-to-Career Evidence Card:

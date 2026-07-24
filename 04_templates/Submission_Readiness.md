@@ -14,6 +14,7 @@
 
 - [ ] The response answers the exact command words and scope.
 - [ ] Every rubric criterion has visible evidence in the work.
+- [ ] The Assessment Evidence Ledger maps each material criterion to a claim, evidence, draft location, or a recorded gap.
 - [ ] Word/time limits and required sections are satisfied.
 - [ ] Lecturer or supervisor directions have been followed or a conflict is recorded.
 

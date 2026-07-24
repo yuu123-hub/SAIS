@@ -10,6 +10,11 @@
 | IAM-02 | Sheffield GenAI reference | `02_institution/Sheffield_GenAI_Reference.md` | assessment AI-use decisions |
 | IAM-03 | Module onboarding | `03_workflows/Module_Onboarding.md` | official module imports |
 | KNB-01 | Pre-arrival knowledge base | `03_knowledge/README.md` | foundation learning and skills practice |
+| WFE-05 | Distinction and career evidence loop | `03_workflows/Distinction_and_Career_Evidence_Loop.md` | assessed modules, feedback, and career evidence |
+| TMP-06 | Module Performance Contract | `04_templates/Module_Performance_Contract.md` | official module-to-performance planning |
+| TMP-07 | Assessment Evidence Ledger | `04_templates/Assessment_Evidence_Ledger.md` | criterion-to-evidence mapping |
+| TMP-08 | Marks and Feedback Intelligence | `04_templates/Marks_and_Feedback_Intelligence.md` | feedback-to-improvement loop |
+| TMP-09 | Academic-to-Career Evidence Card | `04_templates/Academic_to_Career_Evidence_Card.md` | safe employability evidence |
 | TOL-02 | Module initializer | `scripts/New-SAISModule.ps1` | student and Codex |
 | RTE-01 | Task router | `AGENTS.md` / `03_workflows/Task_Router.md` | Codex |
 | WFE-01 | Workflow engine | `03_workflows/` | routed task |

@@ -34,8 +34,11 @@ $searchTemplate = Join-Path $repositoryRoot '04_templates\research\Search_Log.md
 $synthesisTemplate = Join-Path $repositoryRoot '04_templates\research\Literature_Synthesis.md'
 $claimEvidenceTemplate = Join-Path $repositoryRoot '04_templates\research\Claim_Evidence_Matrix.md'
 $dataAnalysisTemplate = Join-Path $repositoryRoot '04_templates\research\Data_Analysis_Plan.md'
+$assessmentLedgerTemplate = Join-Path $repositoryRoot '04_templates\Assessment_Evidence_Ledger.md'
+$careerCardTemplate = Join-Path $repositoryRoot '04_templates\Academic_to_Career_Evidence_Card.md'
+$feedbackIntelligenceTemplate = Join-Path $repositoryRoot '04_templates\Marks_and_Feedback_Intelligence.md'
 
-foreach ($template in @($contextTemplate, $sourceTemplate, $readinessTemplate, $searchTemplate, $synthesisTemplate, $claimEvidenceTemplate, $dataAnalysisTemplate)) {
+foreach ($template in @($contextTemplate, $sourceTemplate, $readinessTemplate, $searchTemplate, $synthesisTemplate, $claimEvidenceTemplate, $dataAnalysisTemplate, $assessmentLedgerTemplate, $careerCardTemplate, $feedbackIntelligenceTemplate)) {
     if (-not (Test-Path -LiteralPath $template)) {
         throw "Required template is missing: $template"
     }
@@ -55,6 +58,9 @@ if ($PSCmdlet.ShouldProcess($projectPath, 'Create SAIS assessed-project scaffold
     Copy-Item -LiteralPath $synthesisTemplate -Destination (Join-Path $projectPath 'notes\Literature_Synthesis.md')
     Copy-Item -LiteralPath $claimEvidenceTemplate -Destination (Join-Path $projectPath 'notes\Claim_Evidence_Matrix.md')
     Copy-Item -LiteralPath $dataAnalysisTemplate -Destination (Join-Path $projectPath 'notes\Data_Analysis_Plan.md')
+    Copy-Item -LiteralPath $assessmentLedgerTemplate -Destination (Join-Path $projectPath 'notes\Assessment_Evidence_Ledger.md')
+    Copy-Item -LiteralPath $careerCardTemplate -Destination (Join-Path $projectPath 'notes\Academic_to_Career_Evidence_Card.md')
+    Copy-Item -LiteralPath $feedbackIntelligenceTemplate -Destination (Join-Path $projectPath 'feedback\Marks_and_Feedback_Intelligence.md')
 
     $contextPath = Join-Path $projectPath 'Project_Context.md'
     $context = Get-Content -LiteralPath $contextPath -Raw -Encoding utf8
@@ -86,6 +92,9 @@ if ($PSCmdlet.ShouldProcess($projectPath, 'Create SAIS assessed-project scaffold
 - ``notes/Literature_Synthesis.md`` — cross-source synthesis.
 - ``notes/Claim_Evidence_Matrix.md`` — claim-to-source audit.
 - ``notes/Data_Analysis_Plan.md`` — question-to-analysis and validity plan.
+- ``notes/Assessment_Evidence_Ledger.md`` — rubric-to-evidence audit.
+- ``notes/Academic_to_Career_Evidence_Card.md`` — public-safe capability evidence after a completed project.
+- ``feedback/Marks_and_Feedback_Intelligence.md`` — private feedback-to-improvement record.
 - ``Submission_Readiness.md`` — final pre-submission gate.
 "@ | Set-Content -LiteralPath (Join-Path $projectPath 'README.md') -Encoding utf8
 

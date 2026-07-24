@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.6.0 - 25 July 2026
+
+- Added Module Performance Contracts for verified learning outcomes, assessment maps, distinction conditions, AI boundaries, risk registers, and reverse plans.
+- Added Assessment Evidence Ledgers to trace rubric requirements through claims, theory, verified evidence, counter-views, and draft locations.
+- Added Marks and Feedback Intelligence records and a feedback-to-next-task improvement experiment.
+- Added public-safe Academic-to-Career Evidence Cards and optional/dissertation decision records.
+- Strengthened Management and International Business criticality checks in Auditor and Challenger.
+- Added a rubric-evidence traceability regression test and extended safe project/module scaffolds.
+
 ## v1.5.0 - 25 July 2026
 
 - Added a modular, pre-arrival knowledge base for management/international-business foundations, research methods/statistics, and critical academic English.

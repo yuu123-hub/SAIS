@@ -31,7 +31,8 @@ if (Test-Path -LiteralPath $modulePath) {
 
 $profileTemplate = Join-Path $repositoryRoot '04_templates\Module_Profile.md'
 $sourceRegisterTemplate = Join-Path $repositoryRoot '04_templates\Module_Source_Register.md'
-foreach ($template in @($profileTemplate, $sourceRegisterTemplate)) {
+$performanceContractTemplate = Join-Path $repositoryRoot '04_templates\Module_Performance_Contract.md'
+foreach ($template in @($profileTemplate, $sourceRegisterTemplate, $performanceContractTemplate)) {
     if (-not (Test-Path -LiteralPath $template)) {
         throw "Required template is missing: $template"
     }
@@ -44,6 +45,7 @@ if ($PSCmdlet.ShouldProcess($modulePath, 'Create SAIS module scaffold')) {
 
     Copy-Item -LiteralPath $profileTemplate -Destination (Join-Path $modulePath 'Module_Profile.md')
     Copy-Item -LiteralPath $sourceRegisterTemplate -Destination (Join-Path $modulePath 'Module_Source_Register.md')
+    Copy-Item -LiteralPath $performanceContractTemplate -Destination (Join-Path $modulePath 'Module_Performance_Contract.md')
 
     $profilePath = Join-Path $modulePath 'Module_Profile.md'
     $profile = Get-Content -LiteralPath $profilePath -Raw -Encoding utf8
@@ -59,6 +61,12 @@ if ($PSCmdlet.ShouldProcess($modulePath, 'Create SAIS module scaffold')) {
     $register = $register.Replace('- Academic year:', "- Academic year: $AcademicYear")
     $register = $register.Replace('- Last reviewed:', "- Last reviewed: $(Get-Date -Format 'yyyy-MM-dd')")
     Set-Content -LiteralPath $registerPath -Value $register -Encoding utf8
+
+    $contractPath = Join-Path $modulePath 'Module_Performance_Contract.md'
+    $contract = Get-Content -LiteralPath $contractPath -Raw -Encoding utf8
+    $contract = $contract.Replace('- Module code and title:', "- Module code and title: $ModuleCode — $ModuleTitle")
+    $contract = $contract.Replace('- Academic year:', "- Academic year: $AcademicYear")
+    Set-Content -LiteralPath $contractPath -Value $contract -Encoding utf8
 
     New-Item -ItemType File -Path (Join-Path $modulePath 'source_materials\.gitkeep') | Out-Null
     New-Item -ItemType File -Path (Join-Path $modulePath 'notes\.gitkeep') | Out-Null

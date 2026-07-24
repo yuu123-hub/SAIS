@@ -14,6 +14,7 @@ A named assessed project and its current lifecycle state, authoritative task mat
 - Current assignment brief, rubric, learning outcomes, deadline, and word/time limit when available.
 - Assessment-specific AI-use status.
 - Module profile when officially available.
+- Module Performance Contract when official module material has been imported.
 
 ## Method
 
@@ -29,6 +30,7 @@ Record the current state and next action in `Project_Context.md`. Do not advance
 
 - Create the project folder and `Project_Context.md`.
 - Record the brief, rubric, deadline, constraints, and AI-use status.
+- Link the relevant Module Performance Contract; if it is not official-ready, record this as a gap rather than assuming its content.
 - Classify absent material as `required now`, `needed before drafting`, or `needed before submission`.
 
 Gate: the deliverable and immediate next action are understood.
@@ -37,6 +39,7 @@ Gate: the deliverable and immediate next action are understood.
 
 - Apply `Assignment_Analysis.md`.
 - Convert command words and rubric criteria into success conditions.
+- Start an `Assessment_Evidence_Ledger.md` with one row per material rubric criterion.
 - Record questions requiring lecturer clarification.
 
 Gate: a defensible task interpretation and evidence plan exist.
@@ -54,6 +57,7 @@ Gate: central claims have identifiable evidence or are explicitly marked as gaps
 ### 4. Argument designed
 
 - Build an argument map.
+- Map every major claim and planned section to the relevant ledger row.
 - Test alternative explanations and counter-evidence.
 - Confirm that the proposed structure answers the brief rather than merely covering the topic.
 
@@ -70,6 +74,7 @@ Gate: a complete draft exists and all provisional citations are identifiable.
 ### 6. Reviewing
 
 - Run Auditor, Challenger, and rubric-aligned Examiner Review proportionately.
+- Reconcile the Assessment Evidence Ledger: every criterion must have visible, accurate evidence or a recorded gap.
 - Prioritise essential corrections before stylistic improvements.
 - Re-check claims after substantial rewrites.
 
@@ -87,6 +92,8 @@ Gate: verdict is `Ready` or the student knowingly accepts every recorded residua
 
 - Record submitted version and date locally.
 - Capture feedback later in `Feedback_Log.md`.
+- When marks or feedback are released, complete `Marks_and_Feedback_Intelligence.md` in the local `feedback/` folder and test one behaviour change in the next task.
+- Create an `Academic_to_Career_Evidence_Card.md` only after a confidentiality and publication check.
 - Propose, but do not automatically write, reusable lessons to academic memory.
 
 ## Output

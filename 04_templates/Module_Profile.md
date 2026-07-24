@@ -24,9 +24,14 @@
 - Common pitfalls explicitly identified by teaching staff:
 - Required/recommended readings:
 
+## Performance contract
+
+- Module Performance Contract path:
+- Contract status: Draft / Official facts imported / Ready for use / Superseded
+- Last contract review:
+
 ## Change control
 
 - Open questions:
 - Last verified:
 - Superseded materials:
-

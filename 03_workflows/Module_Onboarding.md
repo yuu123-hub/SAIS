@@ -17,14 +17,14 @@ Do not create a substantive module profile from an old catalogue entry, a search
 
 1. Create the module scaffold using `scripts/New-SAISModule.ps1` when requested.
 2. Register every authoritative source and its version in `Module_Source_Register.md`.
-3. Extract facts faithfully into `Module_Profile.md`; distinguish quotations, summaries, interpretations, and open questions.
+3. Extract facts faithfully into `Module_Profile.md` and `Module_Performance_Contract.md`; distinguish quotations, summaries, interpretations, and open questions.
 4. Resolve conflicts by date, authority, assessment specificity, and direct lecturer clarification.
 5. Link each assessment project to the module profile without copying private source documents into Git.
 6. Recheck the profile when a handbook, rubric, deadline, or AI-use rule changes.
 
 ## Output
 
-- Versioned Module Profile.
+- Versioned Module Profile and Module Performance Contract.
 - Source register with authority and supersession status.
 - Confirmed assessment facts and unresolved questions.
 - Links to associated project folders.

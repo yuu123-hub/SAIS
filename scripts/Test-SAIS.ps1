@@ -10,6 +10,7 @@ $required = @(
     '01_governance/AI_Use_in_Assessment.md',
     '02_institution/profiles/sheffield_management_school/Institutional_Academic_Model.md',
     '02_institution/Sheffield_GenAI_Reference.md',
+    '02_institution/Sheffield_PGT_Assessment_Reference.md',
     '03_knowledge/README.md',
     '03_knowledge/foundations/Management_and_International_Business_Foundations.md',
     '03_knowledge/research_methods/Methods_and_Statistics_Foundations.md',
@@ -21,11 +22,17 @@ $required = @(
     '03_workflows/Chinese_to_English_Drafting.md',
     '03_workflows/Research_Design.md',
     '03_workflows/Data_Analysis.md',
+    '03_workflows/Distinction_and_Career_Evidence_Loop.md',
     '03_workflows/Module_Onboarding.md',
     '03_workflows/dissertation_tracks/Academic_Research.md',
     '03_workflows/dissertation_tracks/Managerial_Problem_Solving.md',
     '04_templates/Academic_Output.md',
     '04_templates/AI_Use_Record.md',
+    '04_templates/Module_Performance_Contract.md',
+    '04_templates/Assessment_Evidence_Ledger.md',
+    '04_templates/Marks_and_Feedback_Intelligence.md',
+    '04_templates/Academic_to_Career_Evidence_Card.md',
+    '04_templates/Option_and_Dissertation_Decision_Record.md',
     '04_templates/Source_Verification_Log.md',
     '04_templates/Submission_Readiness.md',
     '04_templates/research/Search_Log.md',
@@ -42,6 +49,7 @@ $required = @(
     '07_quality_control/test_cases/Dissertation_Ethics.md',
     '07_quality_control/test_cases/Unsupported_Literature_Gap.md',
     '07_quality_control/test_cases/Correlation_Causation.md',
+    '07_quality_control/test_cases/Rubric_Evidence_Traceability.md',
     '07_quality_control/test_cases/Cross_Project_Contamination.md',
     'scripts/New-SAISProject.ps1',
     'scripts/Test-GitScope.ps1',
@@ -117,7 +125,8 @@ $requiredRouteLabels = @(
     'Supervisor Meeting',
     'Chinese-to-English Drafting',
     'Pre-arrival and Growth',
-    'Module Onboarding'
+    'Module Onboarding',
+    'Distinction and Career Evidence Loop'
 )
 $missingRouteLabels = $requiredRouteLabels | Where-Object { $taskRouterText -notmatch [regex]::Escape($_) }
 if ($missingRouteLabels) { throw "Task Router is missing workflow coverage: $($missingRouteLabels -join ', ')" }
@@ -125,6 +134,12 @@ if ($missingRouteLabels) { throw "Task Router is missing workflow coverage: $($m
 $projectScript = Get-Content -Raw -Encoding utf8 'scripts/New-SAISProject.ps1'
 if ($projectScript -notmatch 'SupportsShouldProcess') { throw 'Project initializer must support -WhatIf' }
 if ($projectScript -notmatch '^[\s\S]*ProjectName must use') { throw 'Project initializer lacks safe name validation' }
+$projectScaffoldFiles = @('Assessment_Evidence_Ledger.md', 'Academic_to_Career_Evidence_Card.md', 'Marks_and_Feedback_Intelligence.md')
+$missingProjectScaffoldFiles = $projectScaffoldFiles | Where-Object { $projectScript -notmatch [regex]::Escape($_) }
+if ($missingProjectScaffoldFiles) { throw "Project initializer is missing distinction/career scaffold files: $($missingProjectScaffoldFiles -join ', ')" }
+
+$moduleScript = Get-Content -Raw -Encoding utf8 'scripts/New-SAISModule.ps1'
+if ($moduleScript -notmatch [regex]::Escape('Module_Performance_Contract.md')) { throw 'Module initializer is missing Module Performance Contract scaffolding' }
 
 $registryText = Get-Content -LiteralPath '00_system/registries/Module_Registry.md' -Raw -Encoding utf8
 $registryIds = [regex]::Matches($registryText, '(?m)^\|\s*(?<id>[A-Z]+-\d+)\s*\|') |
