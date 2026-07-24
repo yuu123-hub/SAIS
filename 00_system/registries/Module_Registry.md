@@ -9,6 +9,7 @@
 | IAM-01 | Institutional model | `02_institution/Sheffield_MIB_Profile.md` | Sheffield tasks |
 | IAM-02 | Sheffield GenAI reference | `02_institution/Sheffield_GenAI_Reference.md` | assessment AI-use decisions |
 | IAM-03 | Module onboarding | `03_workflows/Module_Onboarding.md` | official module imports |
+| KNB-01 | Pre-arrival knowledge base | `03_knowledge/README.md` | foundation learning and skills practice |
 | TOL-02 | Module initializer | `scripts/New-SAISModule.ps1` | student and Codex |
 | RTE-01 | Task router | `AGENTS.md` / `03_workflows/Task_Router.md` | Codex |
 | WFE-01 | Workflow engine | `03_workflows/` | routed task |

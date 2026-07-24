@@ -1,8 +1,8 @@
 # Version
 
-- System: SAIS v1.4.0
-- Status: Audited operational baseline with data analysis, module onboarding, memory isolation, and automated integrity checks
-- Updated: 24 July 2026
+- System: SAIS v1.5.0
+- Status: Audited operational baseline with a modular pre-arrival knowledge base, data analysis, module onboarding, memory isolation, and automated integrity checks
+- Updated: 25 July 2026
 
 ## Change policy
 

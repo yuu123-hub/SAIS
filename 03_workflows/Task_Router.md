@@ -19,7 +19,7 @@
 | presentation | Presentation | Assessment Review |
 | supervisor feedback, lecturer feedback, meeting notes | Supervisor Meeting | Feedback Log, Growth Log |
 | Chinese explanation, Chinese-to-English, improve academic English | Chinese-to-English Drafting | AI-use policy, source verification |
-| skills/readiness/career | Pre-arrival and Growth | Skill Gap Tracker |
+| skills/readiness/career, basic concept, academic vocabulary, methods/statistics foundation | Pre-arrival and Growth | Skill Gap Tracker, relevant `03_knowledge/` foundation |
 | module handbook, syllabus, module setup | Module Onboarding | Module Profile, Module Source Register |
 
 ## Minimum context by task

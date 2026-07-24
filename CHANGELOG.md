@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.5.0 - 25 July 2026
+
+- Added a modular, pre-arrival knowledge base for management/international-business foundations, research methods/statistics, and critical academic English.
+- Added Chinese-first learning support and argument-building practice without representing general foundations as module requirements.
+- Routed foundation-concept, vocabulary, methods, and statistics requests through the pre-arrival workflow.
+- Registered knowledge-base ownership in the architecture and module registry.
+
 ## v1.4.0 — 24 July 2026
 
 - Added a mandatory workflow interface contract and automated contract validation.

@@ -6,7 +6,7 @@ Prepare for the MSc without pretending to know unissued module requirements.
 
 ## Task Context
 
-Current capability evidence, pre-arrival timeframe, known programme context, and the student's learning priorities.
+Current capability evidence, pre-arrival timeframe, known programme context, learning priorities, and (when useful) the `03_knowledge/` pre-arrival foundations.
 
 ## Required Inputs
 
@@ -16,7 +16,7 @@ A self-assessment plus at least one authentic sample or task where practical; of
 
 1. Record current capability against a target: critical reading, academic writing, literature search, citation management, research design, quantitative literacy, qualitative analysis, presentation, and academic English.
 2. Choose one or two priority skills for a four-week practice cycle.
-3. Use a small authentic task: analyse one article, create an argument map, practise a Harvard reference, or compare research designs.
+3. Use a small authentic task: analyse one article, create an argument map, practise a Harvard reference, compare research designs, or explain one foundation concept first in Chinese and then in short academic English.
 4. Record evidence of progress and the next practice target.
 5. When official modules arrive, map skills and interests to the actual learning outcomes and assessments.
 

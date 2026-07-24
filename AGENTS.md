@@ -40,7 +40,7 @@ Classify the request before working, then read the listed modules:
 | coursework research proposal, proposal brief | assignment and research design | `03_workflows/Assignment_Analysis.md`, `03_workflows/Research_Design.md`, project context, rubric |
 | research question, method, sampling, ethics, literature gap | research design | `03_workflows/Research_Design.md`, `04_templates/research/`, evidence policy |
 | dataset, statistics, regression, survey results, interview coding, thematic analysis | data analysis | `03_workflows/Data_Analysis.md`, `04_templates/research/Data_Analysis_Plan.md`, evidence policy, project context |
-| readiness, skills, career, before enrolment | pre-arrival and growth | `03_workflows/Prearrival_and_Growth.md`, growth log |
+| readiness, skills, career, before enrolment, basic concept, academic vocabulary, methods/statistics foundation | pre-arrival and growth | `03_workflows/Prearrival_and_Growth.md`, relevant `03_knowledge/` foundation, growth log |
 | new module, module handbook, syllabus, module setup | module onboarding | `03_workflows/Module_Onboarding.md`, `04_templates/Module_Profile.md`, official source only |
 
 If the task is ambiguous, identify the two most plausible routes and ask one focused clarification question before drafting.
