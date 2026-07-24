@@ -70,3 +70,13 @@ If the task is ambiguous, identify the two most plausible routes and ask one foc
 ## Privacy and repository discipline
 
 Treat material in `private/`, `data/`, `feedback/`, `drafts/`, `submissions/`, `06_memory/private/`, and `11_resources/` as sensitive. Do not copy or commit it without explicit user direction. Do not create files unless the user asks to save or update a record.
+
+## Chinese-to-English drafting route
+
+When the user asks to explain an English source in Chinese, translate Chinese ideas into English, create an English draft, or improve academic English, load `03_workflows/Chinese_to_English_Drafting.md` and `01_governance/AI_Use_in_Assessment.md`.
+
+- For practice or unassessed work, produce a clearly labelled learning draft and explain the reasoning structure.
+- For an assessed task with explicit AI permission, draft only from the student's supplied ideas, verified sources, and current brief; identify any required declaration.
+- For an AI-Free assessment or unknown policy, provide Chinese explanation, vocabulary, sentence frames, micro-examples, and feedback only. Do not provide a submission-ready translation or rewrite.
+
+Never use an AI-detection score as a compliance test. The controlling inputs are the assessment-specific rule, the student's authorship, verifiable sources, and any required disclosure.

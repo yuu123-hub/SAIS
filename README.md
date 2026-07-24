@@ -1,57 +1,65 @@
 # SAIS v1 — Sheffield Academic Intelligence System
 
-SAIS 是一套在本機 Markdown repository 中運作、由 Codex 協助執行的學術工作系統。它的明確目標是協助你在每一門課的報告、作業與 dissertation 中，持續以 **Distinction** 為品質標準：將 rubric 轉為成功條件、建立有證據的批判性論證、找出高權重缺口，並在交稿前以 marker 的角度修訂。
+SAIS 是一套在本機 Markdown repository 運作、由 Codex 協助執行的學術工作系統。它以 distinction 為目標，但不保證成績；它協助你建立理解、研究、論證、寫作與修訂能力，而不是取代你的作者責任。
 
-它採取**教練模式**：幫你拆題、找資料、建立論證、檢查草稿、整理導師回饋；它不會捏造來源，也不會把未核實內容偽裝成可直接交的作業。
+## 你可以怎麼使用 SAIS
 
-## 先從這裡開始
+### 讀一篇英文論文
 
-1. 把 assignment brief、module handbook 或 rubric 放到一個新專案的 `05_projects/<project-name>/`；敏感檔放入該專案的 `private/`，此資料夾預設不會被 Git 追蹤。
-2. 由 [Project_Context.md](04_templates/Project_Context.md) 建立該專案背景。
-3. 在 Codex 說明你的任務，例如：`Analyse the brief in 05_projects/mgt601_essay/ and create a research plan.`
-4. Codex 會按 [AGENTS.md](AGENTS.md) 自動選取需要的 workflow、template、governance 與 project context；不用每次指定檔案。
+把 PDF 放在 `05_projects/<project>/materials/`，然後說：
 
-## 什麼時候新增 Module Profile？
+```text
+Explain this paper in simple Chinese, create a Reading Note, and show me the strongest limitation.
+```
 
-拿到正式 module handbook、learning outcomes、assessment rubric 或 lecturer guidance 時，複製 [Module_Profile.md](04_templates/Module_Profile.md) 至 `02_institution/modules/<module-code>/`。這些正式資料會覆蓋任何一般性建議。
+SAIS 會拆分研究問題、理論、方法、發現、限制、可用證據和頁碼；你再讀原文的關鍵部分並形成自己的判斷。
 
-## 如何安全同步 GitHub
+### 用中文建立論點，再轉成英文
 
-1. 建立 **private** GitHub repository。
-2. 先執行 `git status`，確認沒有私密草稿、回饋、研究資料或 PDF 被列為 staged。
-3. 只提交系統規格、workflows、templates 與已去識別化筆記。
-4. 未公開研究、導師回饋、受訪者資料和最終提交稿，保持在 `.gitignore` 指定的私密位置。
+你可以先用中文寫 Claim、Reason、Evidence、Limitation 和 Conclusion，例如：
+
+```text
+把這個中文論點轉成練習用的 British academic English，
+不要新增任何未被來源支持的內容。
+```
+
+SAIS 會依 [Chinese-to-English Drafting workflow](03_workflows/Chinese_to_English_Drafting.md) 產出英文學習草稿、句型或語言建議。對 assessed work，先提供 brief 和 AI-use policy；AI-Free 或規則不明時，SAIS 不會產出可直接提交的完整英文稿。
+
+### 分析作業 brief
+
+把 brief、rubric 和 module handbook 放入專案資料夾，再說：
+
+```text
+Analyse the brief in 05_projects/<project>/ and create a distinction-focused research plan.
+```
+
+SAIS 會自動讀取 [AGENTS.md](AGENTS.md) 的路由規則，載入相應 workflow、project context、institutional profile、governance 與 template。
+
+## 每個專案怎麼開始
+
+1. 複製 [Project_Context.md](04_templates/Project_Context.md) 到 `05_projects/<project-name>/`。
+2. 將可安全保存的 brief、handbook、文章放入 `materials/`。
+3. 將草稿、個資、未公開資料、訪談資料或導師私密回饋放入 `private/`；此資料夾已被 Git 忽略。
+4. 先讓 SAIS 分析資料與建立計畫，再逐步寫作、審計與修訂。
+
+## 重要規則
+
+- Module handbook、rubric、assessment brief、AI-use policy 與 supervisor guidance 優先於一般 SAIS 建議。
+- 不要將 AI 產出的內容當作學術來源或捏造引用。
+- AI detector 分數不是合規標準；是否可提交取決於該 assessment 的規則、你的作者責任、來源可追溯性與必要的 disclosure。
+- SAIS 預設使用 British English 進行學術輸出，並可用中文講解。
 
 ## Repository map
 
-- `00_system/` — mission、資料治理與使用原則
-- `01_governance/` — academic integrity、evidence、uncertainty 與 quality gates
-- `02_institution/` — Sheffield verified profile 與未來 module imports
-- `03_workflows/` — Codex 對不同任務的標準流程
-- `04_templates/` — 可複製的 project、brief、reading 與論證格式
-- `05_projects/` — 課程、作業與 dissertation 工作區
-- `06_memory/` — 長期的研究興趣與已去識別化成長紀錄
-- `07_quality_control/` — auditor、challenger、calibration
+- `00_system/` — 系統使命、資料治理、版本與 onboarding。
+- `01_governance/` — 學術誠信、證據、不確定性、品質與 AI-use policy。
+- `02_institution/` — 已核實的 Sheffield programme/module context。
+- `03_workflows/` — 各類任務的標準流程。
+- `04_templates/` — 可重複使用的 project、reading、argument、research 與 AI-use formats。
+- `05_projects/` — 實際課程、作業與 dissertation 工作區。
+- `06_memory/` — 研究興趣、成長紀錄與重複問題。
+- `07_quality_control/` — Auditor、Challenger、Examiner、calibration 與 regression tests。
 
-## Distinction-first working rule
+## 入學前下一步
 
-對每一份有 rubric 的評量，SAIS 會：
-
-1. 先抽取與排序 distinction-level 成功條件，而非直接開始寫正文。
-2. 檢查論點是否具有批判性、理論是否被真正應用、證據是否足夠且可追溯。
-3. 主動尋找反方、限制與替代解釋，避免描述性堆砌。
-4. 以「最可能拉低分數的缺口」排序修訂建議，並保留可執行的下一步。
-5. 將 lecturer 或 supervisor 的實際 feedback 寫回 project 與 growth log，讓下一份作業針對重複弱點改進。
-
-## 進階能力已放在哪裡？
-
-- **評分／Distinction review**：`03_workflows/Assessment_Review.md` 與 `07_quality_control/Examiner_Review.md`
-- **研究問題、文獻綜述與方法論**：`03_workflows/Research_Design.md` 與 `04_templates/research/`
-- **Dissertation 雙軌**：`03_workflows/dissertation_tracks/`（Academic Research / Managerial Problem Solving）
-- **理論、概念、證據與 gap 累積**：`04_templates/knowledge_objects/` 與 `06_memory/`
-- **開學前能力差距與職涯連結**：`03_workflows/Prearrival_and_Growth.md`
-- **AI 失誤回歸測試**：`07_quality_control/test_cases/` 與 `tests/Task_Routing_Scenarios.md`
-
-## Boundary
-
-SAIS 的設計目標是最大化你取得卓越成績與 Distinction 的機率；最終成績仍由學校依據當期 rubric、你的原創工作與正式規範決定。SAIS 不取代 module handbook、University regulations 或 supervisor 指示。
+完成 [Onboarding Checklist](00_system/Onboarding_Checklist.md)：建立 Zotero、完成一份英文 mini-analysis、補一份 methodology audit，並在收到正式 handbook 後建立 module profiles。
