@@ -1,0 +1,18 @@
+# Private academic material — keep local unless explicitly reviewed for sharing.
+05_projects/**/private/
+05_projects/**/drafts/
+05_projects/**/submissions/
+05_projects/**/data/
+05_projects/**/feedback/
+06_memory/private/
+11_resources/private/
+11_resources/raw_interviews/
+
+# Personal exports and local tooling.
+*.docx
+*.xlsx
+*.pptx
+*.pdf
+.DS_Store
+Thumbs.db
+
