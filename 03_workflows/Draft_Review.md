@@ -20,3 +20,10 @@ At minimum the draft and the prompt/brief. A rubric materially improves feedback
 
 Strengths, priority issues, annotated revision plan, facts/analysis distinction, gaps, and next action.
 
+## Gaps
+
+Record absent brief/rubric, missing sections, unverifiable sources, unresolved argument decisions, and text that cannot be assessed from the supplied extract.
+
+## Next Action
+
+Revise the highest-impact issue first, then rerun the relevant audit gate.

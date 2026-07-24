@@ -8,7 +8,7 @@ This is a verified, minimal institutional profile—not a claim to model individ
 - Programme-level assessment includes individual assignments, group projects, examinations, and dissertation.
 - Dissertation work may be academic research or managerial problem solving; the official description requires critical analysis in appropriate management literature.
 - The 2026 course page states that the curriculum is being revised. Module handbooks, current rubrics, programme regulations, and supervisor guidance must override this profile.
-- The verified published core-module list and the historical, non-binding Semester 1 reference are maintained in [MIB_2026_Official_Programme_Reference.md](C:\Users\user\Documents\SAIS\02_institution\MIB_2026_Official_Programme_Reference.md).
+- The verified published core-module list and the historical, non-binding Semester 1 reference are maintained in [MIB_2026_Official_Programme_Reference.md](../../MIB_2026_Official_Programme_Reference.md).
 
 ## Operating model for assessed work
 

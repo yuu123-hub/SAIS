@@ -1,5 +1,9 @@
 # Workflow: Assessment and Distinction Review
 
+## Task Context
+
+An assessed draft or plan, its project context, and the current authoritative assessment materials.
+
 ## Required inputs
 
 Draft or plan; current brief; rubric or marking criteria; source list. Without a rubric, review against general postgraduate standards and explicitly label this limitation.
@@ -15,3 +19,10 @@ Draft or plan; current brief; rubric or marking criteria; source list. Without a
 
 Strengths; criterion-by-criterion gaps; priority revision plan; source risks; next action.
 
+## Gaps
+
+Record absent rubric language, incomplete draft sections, unverifiable sources, and any criterion that cannot be assessed.
+
+## Next Action
+
+Apply the highest-impact revision or obtain the missing authoritative assessment material.

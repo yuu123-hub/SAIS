@@ -4,7 +4,17 @@
 
 The primary purpose is to answer a scholarly research question and make a qualified academic contribution.
 
-## Required decisions
+## Task Context
+
+An academic-research dissertation with recorded stage, programme rules, supervisor direction, literature state, access, and ethics status.
+
+## Required Inputs
+
+Current Dissertation Status, evidence-supported gap, research question, candidate framework, feasible data, and applicable ethics guidance.
+
+## Method
+
+### Required decisions
 
 1. Topic and research problem
 2. Literature gap and research question
@@ -13,10 +23,21 @@ The primary purpose is to answer a scholarly research question and make a qualif
 5. Ethics approval status before data collection where required
 6. Findings, discussion, contribution, limitations, and future research
 
-## Quality checks
+### Quality checks
 
 - The research question is answerable with the proposed evidence.
 - Method choice follows the question and stated assumptions.
 - Literature review synthesises debates rather than summarising papers one by one.
 - Discussion distinguishes findings from inference and does not overclaim.
 
+## Output
+
+Stage decision record, research-chain status, quality risks, supervisor questions, and next milestone.
+
+## Gaps
+
+Record unsupported originality, incomplete literature search, theory–method mismatch, data/ethics/access risk, or unresolved supervisor direction.
+
+## Next Action
+
+Complete the earliest unresolved decision in the academic research chain.

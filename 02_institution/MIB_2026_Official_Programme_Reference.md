@@ -21,25 +21,24 @@ The 2026-27 course page states that the curriculum is being revised and that cor
 
 ## Published 2026-27 core-module list
 
-The course page currently names the following as **Core modules**. Their term, code, credits, detailed content, assessment, and learning outcomes remain unconfirmed until official module documentation is issued.
+The course page currently names the following as **Core modules** and publishes the credit values below. Because the same page states that the curriculum is still being confirmed, treat these as the current official published position rather than a guaranteed final structure. Module codes, semester allocation, learning outcomes, assessment, and reading lists still require current module documentation.
 
-| Module title | Confirmed status | Confirmed details | SAIS action |
-| --- | --- | --- | --- |
-| Accounting and Financial Management | Core | Title only | Create/update profile when handbook arrives. |
-| Marketing | Core | Title only | Create/update profile when handbook arrives. |
-| Operations and Supply Chain Management | Core | Title only | Create/update profile when handbook arrives. |
-| International Business | Core | Title only | Create/update profile when handbook arrives. |
-| Managing People in Organisations | Core | Title only | Create/update profile when handbook arrives. |
-| Strategic Management | Core | Title only | Create/update profile when handbook arrives. |
-| Managerial Economics | Core | Title only | Create/update profile when handbook arrives. |
-| Management Inquiry | Core | Title only | Create/update profile when handbook arrives. |
-| Project Dissertation | Core | Title only | Use the dissertation workflow only after current dissertation guidance is supplied. |
+| Module title | Current published status | Current published credits | Published focus (brief summary) | SAIS action |
+| --- | --- | ---: | --- | --- |
+| Accounting and Financial Management | Core | 15 | Accounting for accountability/decisions and financial management/investment appraisal | Create/update profile when handbook arrives. |
+| Marketing | Core | 15 | Marketing and consumption in political, economic, technological, social and cultural context | Create/update profile when handbook arrives. |
+| Operations and Supply Chain Management | Core | 15 | Effective and efficient management of resources in manufacturing and services | Create/update profile when handbook arrives. |
+| International Business | Core | 15 | Internationalisation, multinational enterprises, cross-cultural management and sustainability | Create/update profile when handbook arrives. |
+| Managing People in Organisations | Core | 15 | Research-informed HRM tools, debates, organisational change and practice | Create/update profile when handbook arrives. |
+| Strategic Management | Core | 15 | Strategy design, options, global competition, implementation and change | Create/update profile when handbook arrives. |
+| Managerial Economics | Core | 15 | Supply, demand, industry structure and their use in managerial strategy | Create/update profile when handbook arrives. |
+| Management Inquiry | Core | 15 | Gathering, analysing, commissioning, interpreting and evaluating quantitative and qualitative management research | Create/update profile when handbook arrives. |
+| Project Dissertation | Core | 45 | Approved management topic through academic research or managerial problem solving | Use the dissertation workflow only after current dissertation guidance is supplied. |
 
 ## Required-choice module group
 
-The same page says that students will take **one** of the following. Treat this as a required choice, not evidence that each module is compulsory for every student.
+The same page currently says that students will take **one** of the following 15-credit modules. Treat this as a provisional required choice, not evidence that each module is compulsory for every student.
 
-- Managing Artificial Intelligence in Organisations
 - International Business Strategy
 - European Business
 - International Human Resource Studies
@@ -68,7 +67,7 @@ Until current handbooks are released, the most defensible preparatory work is:
 ## Information still required before module-specific work
 
 - Current module code and academic year.
-- Semester allocation and credits.
+- Final confirmed semester allocation and credits.
 - Learning outcomes and teaching team.
 - Assessment format, weighting, due dates, and marking rubric.
 - Required reading list and allowed AI-use guidance.

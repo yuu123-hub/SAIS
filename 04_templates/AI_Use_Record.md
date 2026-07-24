@@ -21,6 +21,7 @@ Use only when the assessment permits GenAI or when this is a practice activity. 
 - Permitted assistance requested: explanation / translation / outline / language feedback / draft / audit
 - What SAIS produced:
 - What the student independently checked or changed:
+- How direct copy-paste was avoided and the work was substantively revised:
 
 ## Submission check
 

@@ -3,7 +3,7 @@
 ## Verified institutional position
 
 - The University states that assessment expectations for GenAI must be communicated through programme, module, and assessment guidance.
-- Some assessments may be AI-Free; in those cases GenAI must not be used to support the work.
+- Some assessments may prohibit GenAI or restrict its use. SAIS labels a prohibited assessment `AI-Free`; the exact module/assessment wording controls.
 - The University advises students not to copy and paste GenAI outputs directly into assessed work, not to use GenAI as an academic source, and to disclose GenAI-produced content where use is permitted.
 - The University says it does not use GenAI detection tools because of concerns about error rates and false positives/negatives. This does not change the requirement to follow assessment-specific rules.
 - The University's 2026 principles describe an Acknowledge, Describe, Evidence model for declaring GenAI use; the exact process may vary by School or assessment.

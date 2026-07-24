@@ -1,7 +1,7 @@
 # Version
 
-- System: SAIS v1.3.0
-- Status: Operational baseline with reproducible literature search and synthesis
+- System: SAIS v1.4.0
+- Status: Audited operational baseline with data analysis, module onboarding, memory isolation, and automated integrity checks
 - Updated: 24 July 2026
 
 ## Change policy

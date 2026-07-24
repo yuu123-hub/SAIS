@@ -7,7 +7,8 @@
 - [x] Record a first academic skill baseline.
 - [x] Establish a Harvard reference practice workflow.
 - [x] Analyse one peer-reviewed management article.
-- [ ] Add a private GitHub remote and push only non-sensitive system files.
+- [x] Add a GitHub remote and push only non-sensitive system files.
+- [ ] Confirm repository visibility is `Private` in GitHub settings.
 - [ ] Complete one 500-800 word practice mini-analysis in the student's own Chinese and English.
 - [ ] Complete one methodology audit: interview/case study versus survey/secondary data.
 - [ ] Add a Zotero library and decide its citation-key convention.

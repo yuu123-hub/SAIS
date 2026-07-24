@@ -4,6 +4,10 @@
 
 Build a transparent, reproducible evidence base for coursework or dissertation work without overstating completeness or manufacturing a literature gap.
 
+## Task Context
+
+A coursework or dissertation question requiring multiple sources, with a bounded scope, available access, and deadline.
+
 ## Required inputs
 
 - Review or assignment question.
@@ -58,3 +62,11 @@ State what was searched, what was not searched, and how confident the gap claim 
 - Claim–evidence map.
 - Qualified gap statement or explicit conclusion that no defensible gap has yet been established.
 - Next search or reading action.
+
+## Gaps
+
+Record unavailable databases, paywalls, language/date restrictions, uncertain indexing, incomplete screening, inaccessible full text, and unresolved contradictory evidence.
+
+## Next Action
+
+Run or refine the single search iteration most likely to change the evidence base, or screen the highest-priority pending sources.

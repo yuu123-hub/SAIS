@@ -33,8 +33,9 @@ $readinessTemplate = Join-Path $repositoryRoot '04_templates\Submission_Readines
 $searchTemplate = Join-Path $repositoryRoot '04_templates\research\Search_Log.md'
 $synthesisTemplate = Join-Path $repositoryRoot '04_templates\research\Literature_Synthesis.md'
 $claimEvidenceTemplate = Join-Path $repositoryRoot '04_templates\research\Claim_Evidence_Matrix.md'
+$dataAnalysisTemplate = Join-Path $repositoryRoot '04_templates\research\Data_Analysis_Plan.md'
 
-foreach ($template in @($contextTemplate, $sourceTemplate, $readinessTemplate, $searchTemplate, $synthesisTemplate, $claimEvidenceTemplate)) {
+foreach ($template in @($contextTemplate, $sourceTemplate, $readinessTemplate, $searchTemplate, $synthesisTemplate, $claimEvidenceTemplate, $dataAnalysisTemplate)) {
     if (-not (Test-Path -LiteralPath $template)) {
         throw "Required template is missing: $template"
     }
@@ -53,6 +54,7 @@ if ($PSCmdlet.ShouldProcess($projectPath, 'Create SAIS assessed-project scaffold
     Copy-Item -LiteralPath $searchTemplate -Destination (Join-Path $projectPath 'notes\Search_Log.md')
     Copy-Item -LiteralPath $synthesisTemplate -Destination (Join-Path $projectPath 'notes\Literature_Synthesis.md')
     Copy-Item -LiteralPath $claimEvidenceTemplate -Destination (Join-Path $projectPath 'notes\Claim_Evidence_Matrix.md')
+    Copy-Item -LiteralPath $dataAnalysisTemplate -Destination (Join-Path $projectPath 'notes\Data_Analysis_Plan.md')
 
     $contextPath = Join-Path $projectPath 'Project_Context.md'
     $context = Get-Content -LiteralPath $contextPath -Raw -Encoding utf8
@@ -83,6 +85,7 @@ if ($PSCmdlet.ShouldProcess($projectPath, 'Create SAIS assessed-project scaffold
 - ``notes/Search_Log.md`` — reproducible literature-search history.
 - ``notes/Literature_Synthesis.md`` — cross-source synthesis.
 - ``notes/Claim_Evidence_Matrix.md`` — claim-to-source audit.
+- ``notes/Data_Analysis_Plan.md`` — question-to-analysis and validity plan.
 - ``Submission_Readiness.md`` — final pre-submission gate.
 "@ | Set-Content -LiteralPath (Join-Path $projectPath 'README.md') -Encoding utf8
 

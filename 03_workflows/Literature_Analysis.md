@@ -20,3 +20,10 @@ Full text or accessible excerpt; bibliographic metadata; a stated purpose for re
 
 Facts, analysis, useful evidence, limitations, relevance, gaps, and source details.
 
+## Gaps
+
+Record unavailable full text, incomplete metadata, unverified pages/quotations, uncertain methods, and missing project purpose.
+
+## Next Action
+
+Verify the most consequential source detail or read the section needed to resolve the next evidence gap.

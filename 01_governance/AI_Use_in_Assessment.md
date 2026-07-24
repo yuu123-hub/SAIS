@@ -13,13 +13,13 @@ The assessment-specific AI rule controls. If it is unavailable or ambiguous, cla
 | Mode | Permitted SAIS support | Submission status |
 | --- | --- | --- |
 | Practice / unassessed | Chinese explanation, source analysis, bilingual draft, language practice, revision coaching | Learning material; not automatically submission-ready |
-| AI-permitted assessment | Source-grounded drafting, translation, editing, and quality review within the brief's stated limit | Student must review, verify, follow any declaration rule, and retain authorship evidence |
+| AI-permitted assessment | Source-grounded working drafts, translation support, editing, and quality review within the brief's stated limit | Working material only: do not copy-paste directly; the student must substantively review/revise, verify, follow any declaration rule, and retain authorship evidence |
 | AI-Free assessment | Explanation, study planning, vocabulary, question prompts, feedback on student-written text where permitted by the brief | Do not generate a submission-ready draft or translation |
 | Policy unknown | Same as AI-Free until clarified | Do not generate a submission-ready draft or translation |
 
 ## Non-negotiable rules
 
-1. Do not copy unverified AI content into assessed work.
+1. Do not copy and paste AI output directly into assessed work. Treat permitted output as working material for the student's further research, judgement, and substantive revision.
 2. Do not cite an AI system as an academic source.
 3. Do not invent sources, evidence, data, quotations, or disclosure statements.
 4. Do not imply that disclosure makes otherwise prohibited AI use acceptable.

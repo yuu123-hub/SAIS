@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.4.0 — 24 July 2026
+
+- Added a mandatory workflow interface contract and automated contract validation.
+- Added quantitative, qualitative, and mixed-method data-analysis workflows and records.
+- Added official module onboarding, source version control, and safe module scaffolding.
+- Added project/module/global memory isolation and a cross-project contamination test.
+- Added Markdown link, UTF-8, version, registry, privacy, and staged Git-scope checks.
+- Strengthened default Git ignores for project and module source materials.
+- Corrected proposal routing and repaired non-portable documentation links.
+- Refreshed the official 2026 MIB module reference and removed a stale optional-module entry.
+- Tightened Sheffield GenAI handling to prevent direct copy-paste of generated assessed prose.
+- Added a repeatable System Audit and Operational Readiness baseline.
+
 ## v1.3.0 — 24 July 2026
 
 - Added exploratory, structured-coursework, dissertation, and systematic-review search modes.

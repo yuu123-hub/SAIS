@@ -4,3 +4,4 @@ Create `02_institution/modules/<module-code>/Module_Profile.md` only from offici
 
 Required fields: module code and title; academic year; learning outcomes; assessment type; weighting; due date; rubric; required referencing style; permitted AI use; required readings; lecturer/supervisor directions; unresolved questions.
 
+Use `scripts/New-SAISModule.ps1` to create a consistent module scaffold. Store licensed or access-controlled originals in the generated `source_materials/` directory, which is ignored by Git. Register every source and superseded version in `Module_Source_Register.md`.

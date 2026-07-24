@@ -50,6 +50,18 @@ SAIS 會自動讀取 [AGENTS.md](AGENTS.md) 的路由規則，載入相應 workf
 3. 將草稿、個資、未公開資料、訪談資料或導師私密回饋放入 `private/`；此資料夾已被 Git 忽略。
 4. 先讓 SAIS 分析資料與建立計畫，再逐步寫作、審計與修訂。
 
+## 收到正式 module handbook 後
+
+```powershell
+.\scripts\New-SAISModule.ps1 `
+  -ModuleSlug mgt_example `
+  -ModuleCode MGT000 `
+  -ModuleTitle "Official module title" `
+  -AcademicYear "2026-27"
+```
+
+只有收到正式 module 資料後才建立 profile；原始 handbook、rubric 或付費材料放入 `source_materials/`，預設不會進入 Git。
+
 ## 重要規則
 
 - Module handbook、rubric、assessment brief、AI-use policy 與 supervisor guidance 優先於一般 SAIS 建議。

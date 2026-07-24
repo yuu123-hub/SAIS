@@ -4,6 +4,10 @@
 
 Help the student understand material in Chinese, develop their own argument, and express it in clear British academic English without hiding the role of AI or adding unsupported content.
 
+## Task Context
+
+The student's intended meaning, learning or assessment purpose, verified sources, and applicable AI-use rule.
+
 ## Required inputs
 
 - The task purpose: practice, unassessed work, or a named assessment.
@@ -19,7 +23,7 @@ Help the student understand material in Chinese, develop their own argument, and
 4. **Apply AI-use gate:** Follow `01_governance/AI_Use_in_Assessment.md` and the current module rule.
 5. **Produce the right output:**
    - Practice: English learning draft plus a brief explanation of Claim-Evidence-Analysis-Critique structure.
-   - AI-permitted assessment: source-grounded English draft, clear assumption labels, and a declaration reminder if required.
+   - AI-permitted assessment: source-grounded English working draft, clear assumption labels, a direct-copy warning, and a declaration reminder if required.
    - AI-Free/unknown: English vocabulary, sentence frames, micro-examples, and feedback only; no submission-ready draft.
 6. **Audit:** Check British English, source traceability, factual accuracy, overclaiming, and whether translation introduced a new idea.
 
@@ -27,9 +31,13 @@ Help the student understand material in Chinese, develop their own argument, and
 
 - Chinese explanation or source map.
 - Student-owned Chinese argument map.
-- English draft, sentence frames, or feedback according to the applicable mode.
+- English working draft, sentence frames, or feedback according to the applicable mode.
 - Facts / Analysis / Gaps / Sources when substantive.
 - AI-use status: `Practice`, `Permitted with conditions`, `AI-Free`, or `Policy unknown`.
+
+## Gaps
+
+Record missing assessment policy, unsupported claims, uncertain intended meaning, absent source locations, or language choices requiring student confirmation.
 
 ## Common failure modes
 

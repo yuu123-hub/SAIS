@@ -4,6 +4,10 @@
 
 Keep an assessed task traceable from initial brief to final submission without mixing verified requirements, working ideas, drafts, and private material.
 
+## Task Context
+
+A named assessed project and its current lifecycle state, authoritative task materials, project records, and local privacy classification.
+
 ## Required inputs
 
 - Project name and assessment type.
@@ -11,13 +15,15 @@ Keep an assessed task traceable from initial brief to final submission without m
 - Assessment-specific AI-use status.
 - Module profile when officially available.
 
-## Lifecycle states
+## Method
+
+### Lifecycle states
 
 `Intake → Brief analysed → Researching → Argument designed → Drafting → Reviewing → Submission check → Closed`
 
 Record the current state and next action in `Project_Context.md`. Do not advance a state merely because prose exists; advance it only when the corresponding gate below is met.
 
-## State gates
+### State gates
 
 ### 1. Intake
 
@@ -89,3 +95,11 @@ Gate: verdict is `Ready` or the student knowingly accepts every recorded residua
 - Completed gate evidence.
 - Blocking and non-blocking gaps.
 - One smallest useful next action.
+
+## Gaps
+
+Record every unpassed state gate, missing authoritative input, unresolved decision, evidence risk, policy uncertainty, or submission dependency.
+
+## Next Action
+
+Complete the smallest action required to pass the current lifecycle gate.

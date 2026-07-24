@@ -2,7 +2,17 @@
 
 Use selectively; do not force every level into every answer.
 
-## Scan
+## Task Context
+
+A management or international-business question, case, decision, or draft with defined organisational, institutional, and temporal scope.
+
+## Required Inputs
+
+Task question, case/source materials, relevant module concepts, and evidence for the focal organisation or context.
+
+## Method
+
+### Scan
 
 Consider which levels are materially relevant:
 
@@ -18,3 +28,10 @@ Consider which levels are materially relevant:
 
 State the chosen levels, why they matter, theory/evidence for each, the interaction between levels, and any omitted level that limits the analysis.
 
+## Gaps
+
+Record missing case evidence, unclear level of analysis, unsupported cross-country generalisation, absent stakeholder perspective, or unavailable temporal context.
+
+## Next Action
+
+Resolve the level or evidence gap that most affects the central argument.

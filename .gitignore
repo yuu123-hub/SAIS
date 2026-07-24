@@ -4,6 +4,10 @@
 05_projects/**/submissions/
 05_projects/**/data/
 05_projects/**/feedback/
+05_projects/**/materials/*
+!05_projects/**/materials/.gitkeep
+02_institution/modules/**/source_materials/*
+!02_institution/modules/**/source_materials/.gitkeep
 06_memory/private/
 11_resources/private/
 11_resources/raw_interviews/
@@ -15,4 +19,3 @@
 *.pdf
 .DS_Store
 Thumbs.db
-

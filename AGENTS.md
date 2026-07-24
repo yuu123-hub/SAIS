@@ -26,6 +26,7 @@ Classify the request before working, then read the listed modules:
 | Signal in input | Route | Load |
 | --- | --- | --- |
 | new assignment, create project, start coursework | project lifecycle | `03_workflows/Project_Lifecycle.md`, `04_templates/Project_Context.md`, project creation script when requested |
+| ready to submit, final check, submission readiness | submission check | `03_workflows/Project_Lifecycle.md`, `04_templates/Submission_Readiness.md`, Auditor, rubric-aligned review |
 | assignment brief, rubric, command word | assignment analysis | `03_workflows/Assignment_Analysis.md`, `04_templates/Assignment_Brief_Analysis.md`, project context, module profile if present |
 | single journal article, PDF, paper | literature analysis | `03_workflows/Literature_Analysis.md`, `04_templates/Reading_Note.md`, evidence policy |
 | find papers, literature search, literature review, evidence base | literature search and synthesis | `03_workflows/Literature_Search_and_Synthesis.md`, `04_templates/research/Search_Log.md`, `04_templates/research/Literature_Synthesis.md`, evidence policy |
@@ -35,9 +36,12 @@ Classify the request before working, then read the listed modules:
 | group report, group presentation, team assignment | group project | `03_workflows/Group_Project.md`, brief, rubric, shared project context |
 | exam revision, reflective assignment | exam/reflection | `03_workflows/Exam_and_Reflection.md`, official learning outcomes or brief |
 | supervisor feedback or meeting | supervisor feedback | `03_workflows/Supervisor_Meeting.md`, `04_templates/Feedback_Log.md`, project context |
-| proposal, dissertation, research idea | dissertation | `03_workflows/Dissertation.md`, `04_templates/Dissertation_Status.md`, Sheffield profile, project context |
+| dissertation proposal, dissertation, dissertation research idea | dissertation | `03_workflows/Dissertation.md`, `04_templates/Dissertation_Status.md`, Sheffield profile, project context |
+| coursework research proposal, proposal brief | assignment and research design | `03_workflows/Assignment_Analysis.md`, `03_workflows/Research_Design.md`, project context, rubric |
 | research question, method, sampling, ethics, literature gap | research design | `03_workflows/Research_Design.md`, `04_templates/research/`, evidence policy |
+| dataset, statistics, regression, survey results, interview coding, thematic analysis | data analysis | `03_workflows/Data_Analysis.md`, `04_templates/research/Data_Analysis_Plan.md`, evidence policy, project context |
 | readiness, skills, career, before enrolment | pre-arrival and growth | `03_workflows/Prearrival_and_Growth.md`, growth log |
+| new module, module handbook, syllabus, module setup | module onboarding | `03_workflows/Module_Onboarding.md`, `04_templates/Module_Profile.md`, official source only |
 
 If the task is ambiguous, identify the two most plausible routes and ask one focused clarification question before drafting.
 
@@ -55,9 +59,11 @@ If the task is ambiguous, identify the two most plausible routes and ask one foc
 
 - For assessment work with a rubric, use `03_workflows/Assessment_Review.md` and `07_quality_control/Examiner_Review.md`. Do not give a numeric or likely grade unless the user asks and the supplied rubric provides a defensible basis.
 - For research design, load the research workflow and request ethics/supervisor inputs before recommending data collection.
+- For data analysis, preserve the chain from research question to data provenance, preparation, assumptions, analysis, result, uncertainty, and bounded interpretation. Never infer results that were not computed or observed.
 - For dissertation work, choose one track in `03_workflows/dissertation_tracks/` before drafting a full design. Do not treat academic research and managerial problem solving as interchangeable.
 - For theory, concept, evidence, and literature-gap records, use the templates in `04_templates/knowledge_objects/`; link records to a project only when the relationship is explicit.
 - If a task reveals a repeated learning pattern, propose an update to `06_memory/Academic_Growth_Log.md` or `06_memory/Writing_Weaknesses.md`; write only after user consent.
+- Apply `06_memory/Memory_Policy.md` before reusing feedback or decisions. Project facts remain project-scoped; module guidance remains module-scoped; promote a pattern to global memory only with provenance, scope, and user consent.
 - For a new paper or report, apply `03_workflows/Literature_Input_Pipeline.md` before relying on its claims in an argument.
 - Do not declare a literature gap or an exhaustive search without a recorded search scope, databases/sources, search dates, screening logic, and limitations.
 - For management or international-business analysis, use `03_workflows/Management_and_IB_Analysis.md` only for relevant levels of analysis; do not turn it into an indiscriminate checklist.
@@ -82,10 +88,13 @@ The user authorises automatic Git completion for SAIS functional work. After cha
 1. inspect the exact Git diff and status;
 2. run the relevant SAIS tests;
 3. stage only the verified functional changes;
-4. create a descriptive local commit; and
-5. push the current tracking branch to the configured private `origin`.
+4. run `scripts/Test-GitScope.ps1` against the staged set;
+5. create a descriptive local commit; and
+6. push the current tracking branch to the configured private `origin`.
 
 Pause and ask before staging any academic article or source document, licensed reading, unpublished paper, assessment draft or submission, lecturer/supervisor feedback, personal reflection, raw research data, participant information, or other material that may be sensitive, copyrighted, confidential, or personally identifying.
+
+Use `Test-GitScope.ps1 -AllowSensitive` only after the user has explicitly approved the exact sensitive paths in the current turn.
 
 Also pause if tests fail, the remote is missing or unexpected, authentication fails, or unrelated user changes make the intended commit scope unclear.
 

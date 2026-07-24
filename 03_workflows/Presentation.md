@@ -20,3 +20,10 @@ The presentation brief and timing. If the audience, marking criteria, or require
 
 Presentation narrative, time budget, slide outline, source plan, challenge questions, gaps, and next action.
 
+## Gaps
+
+Record missing rubric, audience, time limit, format, source permission, accessibility requirement, or rehearsal evidence.
+
+## Next Action
+
+Confirm the missing constraint with the largest design impact or rehearse the highest-risk section to time.
