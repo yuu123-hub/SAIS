@@ -1,7 +1,7 @@
 # Version
 
-- System: SAIS v1.1.0
-- Status: Operational baseline with bilingual drafting and assessment AI-use gate
+- System: SAIS v1.2.0
+- Status: Operational baseline with assessed-project lifecycle and project scaffolding
 - Updated: 24 July 2026
 
 ## Change policy

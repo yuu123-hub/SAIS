@@ -10,16 +10,20 @@ $required = @(
     '02_institution/profiles/sheffield_management_school/Institutional_Academic_Model.md',
     '02_institution/Sheffield_GenAI_Reference.md',
     '03_workflows/Task_Router.md',
+    '03_workflows/Project_Lifecycle.md',
     '03_workflows/Chinese_to_English_Drafting.md',
     '03_workflows/Research_Design.md',
     '03_workflows/dissertation_tracks/Academic_Research.md',
     '03_workflows/dissertation_tracks/Managerial_Problem_Solving.md',
     '04_templates/Academic_Output.md',
     '04_templates/AI_Use_Record.md',
+    '04_templates/Source_Verification_Log.md',
+    '04_templates/Submission_Readiness.md',
     '04_templates/research/Literature_Synthesis.md',
     '04_templates/knowledge_objects/Theory_Card.md',
     '07_quality_control/Examiner_Review.md',
-    '07_quality_control/test_cases/Dissertation_Ethics.md'
+    '07_quality_control/test_cases/Dissertation_Ethics.md',
+    'scripts/New-SAISProject.ps1'
 )
 
 $missing = $required | Where-Object { -not (Test-Path $_) }
@@ -32,6 +36,15 @@ $paths = [regex]::Matches($agentText, '`(?<path>[^`]+\.md)`') |
     Sort-Object -Unique
 $missingRouterFiles = $paths | Where-Object { -not (Test-Path $_) }
 if ($missingRouterFiles) { throw "AGENTS.md references missing files: $($missingRouterFiles -join ', ')" }
+
+$projectScript = Get-Content -Raw -Encoding utf8 'scripts/New-SAISProject.ps1'
+if ($projectScript -notmatch 'SupportsShouldProcess') { throw 'Project initializer must support -WhatIf' }
+if ($projectScript -notmatch '^[\s\S]*ProjectName must use') { throw 'Project initializer lacks safe name validation' }
+
+$validationProject = '05_projects/sais_validation_project'
+if (Test-Path -LiteralPath $validationProject) { throw "Reserved validation project already exists: $validationProject" }
+& '.\scripts\New-SAISProject.ps1' -ProjectName 'sais_validation_project' -WhatIf | Out-Null
+if (Test-Path -LiteralPath $validationProject) { throw 'Project initializer created files during -WhatIf validation' }
 
 git check-ignore -q '05_projects/example/private/draft.md'
 if ($LASTEXITCODE -ne 0) { throw 'Private project material is not ignored' }

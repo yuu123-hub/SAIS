@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.0 — 24 July 2026
+
+- Added an end-to-end assessed-project lifecycle with explicit state gates.
+- Added source-verification and submission-readiness templates.
+- Added a safe PowerShell project initializer for consistent project folders.
+- Extended automatic routing, registry entries, and regression checks.
+- Added automatic stage/commit/push for validated functional changes, with mandatory confirmation for academic source documents and sensitive material.
+
 ## v1.1.0 — 24 July 2026
 
 - Added Chinese-to-English drafting workflow with practice, permitted-assessment, AI-Free, and policy-unknown modes.

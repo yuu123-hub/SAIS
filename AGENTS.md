@@ -25,6 +25,7 @@ Classify the request before working, then read the listed modules:
 
 | Signal in input | Route | Load |
 | --- | --- | --- |
+| new assignment, create project, start coursework | project lifecycle | `03_workflows/Project_Lifecycle.md`, `04_templates/Project_Context.md`, project creation script when requested |
 | assignment brief, rubric, command word | assignment analysis | `03_workflows/Assignment_Analysis.md`, `04_templates/Assignment_Brief_Analysis.md`, project context, module profile if present |
 | journal article, PDF, paper, literature | literature analysis | `03_workflows/Literature_Analysis.md`, `04_templates/Reading_Note.md`, evidence policy |
 | essay/report draft, revise, proofread | draft review | `03_workflows/Draft_Review.md`, `04_templates/Argument_Map.md`, `07_quality_control/Auditor.md`, `07_quality_control/Challenger.md` |
@@ -58,6 +59,7 @@ If the task is ambiguous, identify the two most plausible routes and ask one foc
 - If a task reveals a repeated learning pattern, propose an update to `06_memory/Academic_Growth_Log.md` or `06_memory/Writing_Weaknesses.md`; write only after user consent.
 - For a new paper or report, apply `03_workflows/Literature_Input_Pipeline.md` before relying on its claims in an argument.
 - For management or international-business analysis, use `03_workflows/Management_and_IB_Analysis.md` only for relevant levels of analysis; do not turn it into an indiscriminate checklist.
+- For an assessed project, use `03_workflows/Project_Lifecycle.md` to keep the brief, source verification, drafting, review, and submission-readiness states connected.
 
 ## Evidence rules
 
@@ -70,6 +72,20 @@ If the task is ambiguous, identify the two most plausible routes and ask one foc
 ## Privacy and repository discipline
 
 Treat material in `private/`, `data/`, `feedback/`, `drafts/`, `submissions/`, `06_memory/private/`, and `11_resources/` as sensitive. Do not copy or commit it without explicit user direction. Do not create files unless the user asks to save or update a record.
+
+## Git completion policy
+
+The user authorises automatic Git completion for SAIS functional work. After changing system specifications, governance, institutional references, workflows, templates, scripts, tests, or non-sensitive documentation:
+
+1. inspect the exact Git diff and status;
+2. run the relevant SAIS tests;
+3. stage only the verified functional changes;
+4. create a descriptive local commit; and
+5. push the current tracking branch to the configured private `origin`.
+
+Pause and ask before staging any academic article or source document, licensed reading, unpublished paper, assessment draft or submission, lecturer/supervisor feedback, personal reflection, raw research data, participant information, or other material that may be sensitive, copyrighted, confidential, or personally identifying.
+
+Also pause if tests fail, the remote is missing or unexpected, authentication fails, or unrelated user changes make the intended commit scope unclear.
 
 ## Chinese-to-English drafting route
 

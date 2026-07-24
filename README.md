@@ -37,6 +37,14 @@ SAIS 會自動讀取 [AGENTS.md](AGENTS.md) 的路由規則，載入相應 workf
 
 ## 每個專案怎麼開始
 
+最快的方式是在 PowerShell 執行：
+
+```powershell
+.\scripts\New-SAISProject.ps1 -ProjectName mgt_example_report -ModuleCode MGT000 -AssessmentType Report -Deadline "2026-12-01 12:00 Europe/London"
+```
+
+這會建立 project context、來源核實紀錄、提交前檢查與安全的資料夾結構。你也可以手動：
+
 1. 複製 [Project_Context.md](04_templates/Project_Context.md) 到 `05_projects/<project-name>/`。
 2. 將可安全保存的 brief、handbook、文章放入 `materials/`。
 3. 將草稿、個資、未公開資料、訪談資料或導師私密回饋放入 `private/`；此資料夾已被 Git 忽略。
