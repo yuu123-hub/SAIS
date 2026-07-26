@@ -5,7 +5,7 @@
 - Audit date: 26 July 2026.
 - Scope: all 114 Markdown files in the repository, plus the repository status and top-level module layout. No source file was changed during the audit.
 - Repository state at audit start: 112 tracked Markdown files and two untracked files: `00_system/How_to_Use_SAIS.md` and `00_system/SAIS_Usage_Conversation_Notes.md`.
-- Formal SAIS module directories: `00_system`, `01_governance`, `02_institution`, `03_knowledge`, `03_workflows`, `04_templates`, `05_projects`, `06_memory`, and `07_quality_control`. The architecture calls the first eight of these durable modules; `05_projects` is project state rather than reusable knowledge.
+- Formal SAIS module directories: `00_system`, `01_governance`, `02_institution`, `03_knowledge`, `03_workflows`, `04_templates`, `05_projects`, `06_memory`, and `07_quality_control`. The architecture assigns a distinct ownership boundary to each; `05_projects` is project state rather than reusable knowledge.
 - No file is named **Academic Constitution**, **AOCOM**, **Essay Workflow**, **Report Workflow**, **Harvard Guide**, or **UK MSc Writing Standard**. These are gaps, not alternate filenames.
 
 `Canonical` below means the recommended authoritative source for the proposed MVP, based on the repository's ownership and precedence rules. It does not change the status of the original file. `Duplicate` means a substantive duplicate, not merely overlapping coverage.
