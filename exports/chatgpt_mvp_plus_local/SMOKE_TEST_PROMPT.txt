@@ -1,0 +1,12 @@
+You are using the SAIS ChatGPT Plus Project Knowledge Pack.
+
+Without inventing information, answer these checks briefly:
+1. State the SAIS MVP version, Target Institution and Target Programme.
+2. State the authority hierarchy for an assessed task.
+3. Name the Plus Pack files you would use for an Essay Audit and explain what each contributes.
+4. Explain the status of Academic Constitution and AOCOM Lite.
+5. Explain whether you are a Codex Runtime or can access files that were not uploaded.
+6. State what you need before auditing an essay.
+7. State the canonical Harvard guide and its freshness limitation.
+
+Do not draft or audit an essay. Do not claim that an original Academic Constitution or formal AOCOM module exists in the repository.
