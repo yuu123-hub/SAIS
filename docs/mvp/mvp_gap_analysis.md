@@ -2,7 +2,7 @@
 
 ## Scope and decision rule
 
-This assesses only a ChatGPT Project Knowledge Pack for the user-specified academic-support tasks. It does not propose a Runtime, CLI, resolver, memory manager, vector store, API, GUI, multi-agent system, large schema set, release governance, or rollback drill.
+This assesses only a ChatGPT Project Knowledge Pack for the user-specified academic-support tasks. Target Institution: **The University of Sheffield**. Target Programme: **Management and International Business MSc**. The repository remains modular; a future ChatGPT export may assemble attributed composite documents. This plan does not propose a Runtime, CLI, resolver, memory manager, vector store, API, GUI, multi-agent system, large schema set, release governance, or rollback drill.
 
 ## Necessary material already present
 
@@ -10,6 +10,7 @@ This assesses only a ChatGPT Project Knowledge Pack for the user-specified acade
 |---|---|---|
 | Governing precedence and coaching boundary | `AGENTS.md`; `01_governance/Policy_Charter.md`; `00_system/Mission.md` | Present; needs a Project-safe distilled instruction file. |
 | Academic integrity, uncertainty, evidence and citation discipline | `Academic_Integrity.md`; `Evidence_and_Uncertainty.md`; `POL-001`; `POL-030`; `Quality_Gates.md` | Present. |
+| Harvard referencing | `05_projects/pre_arrival_foundation/materials/harvard.docx` | Present. Unique canonical University of Sheffield guide; last reviewed Summer 2025 and requires a freshness check against the University Library page before future packaging. |
 | Assessment-specific AI boundary | `AI_Use_in_Assessment.md`; `Sheffield_GenAI_Reference.md`; `AI_Use_Record.md` | Present. |
 | Assignment brief analysis | `Assignment_Analysis.md`; `Assignment_Brief_Analysis.md` | Present. |
 | Essay/report planning and drafting support | `Assignment_Analysis.md`; `Argument_Map.md`; `Paragraph_Argument.md`; `Draft_Review.md`; `Academic_Output.md` | Present as generic academic support, not genre-specific documents. |
@@ -24,9 +25,8 @@ This assesses only a ChatGPT Project Knowledge Pack for the user-specified acade
 
 | Missing item | Effect on MVP | Minimum response |
 |---|---|---|
-| Academic Constitution | The governing rules are distributed across several files, so an upload could be interpreted inconsistently. | Create one export-only `core/SAIS_Academic_Constitution.md` by assembling unchanged, attributed sections from the contract, charter, integrity, evidence, quality-gate and AI-use sources. Do not invent new policy. |
-| AOCOM definition/source | The requested name cannot be mapped to a repository rule. | User must define the acronym or supply the intended source before it can enter the pack. |
-| Harvard Referencing Guide | Citation integrity exists, but Harvard punctuation/order examples and source-type rules are absent. | Do not claim Harvard formatting coverage. Add an authorised/current Harvard guide only after the user identifies the required Sheffield/School source. |
+| Academic Constitution source module | `00_Academic_Constitution/` does not exist. The governing rules are distributed across existing sources, so the original named module cannot be treated as a source. | Future export may create an explicitly attributed `core/SAIS_Academic_Constitution.md` composite. It must be labelled as an export composite, not an original recovered source. The absence affects consistent use of governance across all academic workflows, but no current workflow link is broken. |
+| AOCOM source module | `01.5_AOCOM/` does not exist and no current file defines or links to it. | Leave AOCOM-specific functionality out of the MVP. The absence does not affect any currently linked workflow; record it as an unresolved source-recovery item, not a request for the user to interpret the acronym. |
 | Essay Workflow | Essays are routed through generic assignment/draft workflows. | MVP can operate safely with a clearly labelled composite “Essay route”; no new source rule is required. |
 | Report Workflow | Reports are routed through generic workflows, with a management/IB lens. | MVP can operate safely with a labelled composite “Report route”; do not invent report sections. |
 | Essay and report templates | No explicit genre templates or section conventions exist. | Use generic Argument Map/Paragraph Argument only; add genre templates only from a brief/rubric or approved source. |
@@ -44,28 +44,28 @@ This assesses only a ChatGPT Project Knowledge Pack for the user-specified acade
 | Criticality overlap | `POL-020`, `Criticality_Model`, Criticality Toolkit, Auditor and Challenger. | Keep policy/model/toolkit sections together in knowledge/core; retain Auditor and Challenger independently. |
 | Programme-context overlap | MIB 2026 Reference, MIB Profile and Institutional Academic Model restate programme facts. | Use the detailed MIB 2026 reference as the factual base; merge only non-repeating operating cautions. |
 | Version conflict | Operational Readiness says v1.4; Version and Changelog show v1.6. | Exclude Operational Readiness from the pack. |
-| Naming inconsistency | Requested terms (Constitution, AOCOM, Essay Workflow, Report Workflow, Harvard Guide, UK MSc Writing Standard) do not match current filenames. | Use export-only descriptive names and an explicit source map; do not rename originals. |
+| Naming inconsistency | Constitution, AOCOM, Essay Workflow, Report Workflow and UK MSc Writing Standard do not match current filenames. The Harvard source is named simply `harvard.docx`. | Use export-only descriptive names and an explicit source map; do not rename originals. |
 | Character-encoding issue | README and Usage Conversation Notes display garbled characters in the current environment. | Do not upload these files unless they are checked and repaired separately. |
 
 ## Material not appropriate to upload
 
-- All `05_projects/` material: project-scoped records, personal study baseline, and source-specific notes.
+- All `05_projects/` material except `05_projects/pre_arrival_foundation/materials/harvard.docx`: project-scoped records, personal study baseline, and source-specific notes. The exception is the canonical University of Sheffield Harvard guide.
 - All `06_memory/` records: personal preferences, writing weaknesses, ideas and learning history. The MVP expressly has no memory manager.
 - `07_quality_control/test_cases/` and `tests/`: local regression fixtures, not instructions for a student-facing Project.
 - `scripts/`, Git rules, registry metadata, changelog, version and system-audit/release records: local repository operations rather than ChatGPT knowledge.
-- `00_system/SAIS_Usage_Conversation_Notes.md`: untracked, garbled and overlapping.
+- `00_system/How_to_Use_SAIS.md` and `00_system/SAIS_Usage_Conversation_Notes.md`: explicitly Not Included; the latter is also untracked, garbled and overlapping.
 - `00_system/Operational_Readiness.md`: stale v1.4 status record.
 - Data-analysis records and non-requested workflows: omit from the minimum pack; they can be added later only if the MVP scope expands.
 
-## Human decisions required before build
+## Resolved MVP decisions and remaining source-recovery items
 
-1. What does **AOCOM** mean, and is there a source document outside this repository that must be treated as canonical?
-2. Which current, authorised **Harvard referencing guide** should control: University-wide, Sheffield Management School, module-specific, or another stated guide?
-3. Should the untracked `00_system/How_to_Use_SAIS.md` be approved as a canonical source, or used only as a non-authoritative prompt guide?
-4. Is the target Project strictly for the Sheffield MIB student? If yes, include the labelled MIB context; if no, omit programme-specific references and rely on task-time official materials.
-5. Should Chinese-to-English support be included in this MVP? It is safe only with the AI-use rule and may be omitted from a compact English-only pack.
-6. Does the user want export-only composite files (recommended for a small upload set), or a one-to-one copy of each selected original? Composite files improve usability but require careful attribution and no semantic change.
+- Fixed target: The University of Sheffield, Management and International Business MSc.
+- Fixed export strategy: repository source files remain modular; the ChatGPT export may use attributed composite documents.
+- Fixed exclusion: `00_system/How_to_Use_SAIS.md` is Not Included.
+- Fixed Harvard decision: `05_projects/pre_arrival_foundation/materials/harvard.docx` is the one canonical Harvard guide for this MVP.
+- Source-recovery item, not a user clarification: `00_Academic_Constitution/` and `01.5_AOCOM/` are absent. The export must not imply that either was recovered or invent their content.
+- Optional scope item: Chinese-to-English drafting remains optional; if included, the existing assessment-specific AI-use gate remains mandatory.
 
 ## MVP impact
 
-The pack can safely support every requested task except **precise Harvard formatting** and a named **AOCOM** function, because the underlying sources for those two items are missing. It can support essay/report work through generic academic workflows, but it must not pretend to have genre-specific official rules or templates. Current brief, rubric and assessment-specific AI-use policy remain mandatory task-time inputs.
+The pack can safely support the requested Harvard-referencing task through the canonical Sheffield guide, subject to a freshness check against the University Library page before packaging. AOCOM-specific functionality remains out of scope because no source exists, but no currently linked MVP workflow depends on it. Essay/report support remains generic and rubric-led rather than genre-template-led. Current brief, rubric and assessment-specific AI-use policy remain mandatory task-time inputs.

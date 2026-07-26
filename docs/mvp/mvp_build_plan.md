@@ -2,7 +2,7 @@
 
 ## Scope and stop boundary
 
-This plan creates only a static, uploadable Knowledge Pack. It does not create the export in this stage and does not start Phase 0–6 or build any runtime component. The only future output tree is:
+This plan creates only a static, uploadable Knowledge Pack for **The University of Sheffield** and the **Management and International Business MSc**. The repository remains modular; the future ChatGPT export may use attributed composite documents. It does not create the export in this stage and does not start Phase 0–6 or build any runtime component. The only future output tree is:
 
 ```text
 exports/chatgpt_mvp/
@@ -24,13 +24,13 @@ All export documents must retain their source path(s), preserve rule precedence,
 
 | Proposed export path | Source files to copy or assemble | Treatment |
 |---|---|---|
-| `00_START_HERE.md` | `00_system/Mission.md`; relevant task routes from `Task_Router.md`; input/gap language from `Workflow_Contract.md` | Assemble a concise entry point: supported tasks, required inputs, AI-policy warning, and where to start. |
+| `00_START_HERE.md` | `00_system/Mission.md`; relevant task routes from `Task_Router.md`; input/gap language from `Workflow_Contract.md` | Assemble a concise entry point for the University of Sheffield MIB MSc: supported tasks, required inputs, AI-policy warning, and where to start. |
 | `01_PROJECT_INSTRUCTIONS.txt` | `AGENTS.md`; `Policy_Charter.md`; `Academic_Integrity.md`; `AI_Use_in_Assessment.md`; `Evidence_and_Uncertainty.md`; `Quality_Gates.md`; `Workflow_Contract.md`; MVP rows from `Task_Router.md` | Assemble the Project instructions from attributed, unchanged rule sections. Exclude Git, filesystem, script, memory-manager and repository-routing mechanics. |
 | `02_UPLOAD_CHECKLIST.md` | `Data_Governance.md`; `Project_Lifecycle.md`; `Source_Verification_Log.md`; `Submission_Readiness.md` | Tell the student which current brief/rubric/source files are needed and what must be redacted or withheld. |
 | `03_DO_NOT_UPLOAD.md` | `Data_Governance.md`; `AI_Use_in_Assessment.md`; `Memory_Policy.md` (principle only) | List confidential, personal, participant, employer, unpublished, feedback and licensed material boundaries. Do not copy any memory records. |
-| `core/SAIS_Academic_Constitution.md` | `Policy_Charter.md`; `Academic_Integrity.md`; `POL-001_Integrity.md`; `Evidence_and_Uncertainty.md`; `POL-030_Citation_Discipline.md`; `Quality_Gates.md`; `AI_Use_in_Assessment.md` | Export-only composite. Preserve source headings/attribution; do not add a rule. This fills the missing named Constitution as a packaging label only. |
-| `core/Sheffield_Context_and_Override_Rules.md` | `Sheffield_GenAI_Reference.md`; `Sheffield_PGT_Assessment_Reference.md`; `Institutional_Academic_Model.md`; optionally `MIB_2026_Official_Programme_Reference.md` | Keep the explicit hierarchy: current assessment material overrides all general context. Include MIB content only if the pack is student-specific. |
-| `workflows/01_Assignment_Essay_and_Report.md` | `Assignment_Analysis.md`; `Project_Lifecycle.md`; `Draft_Review.md`; `Assessment_Review.md`; optionally `Management_and_IB_Analysis.md` | Composite route for brief analysis, essay/report planning, drafting support, revision and audit. It must state that essay/report are composite routes, not original standalone workflows. |
+| `core/SAIS_Academic_Constitution.md` | `Policy_Charter.md`; `Academic_Integrity.md`; `POL-001_Integrity.md`; `Evidence_and_Uncertainty.md`; `POL-030_Citation_Discipline.md`; `Quality_Gates.md`; `AI_Use_in_Assessment.md` | Export-only composite because the expected source module `00_Academic_Constitution/` is absent. Preserve source headings/attribution; label it as a composite and do not add a rule or imply recovery of an original Constitution. |
+| `core/Sheffield_Context_and_Override_Rules.md` | `Sheffield_GenAI_Reference.md`; `Sheffield_PGT_Assessment_Reference.md`; `Institutional_Academic_Model.md`; `MIB_2026_Official_Programme_Reference.md`; unique operating implications from `Sheffield_MIB_Profile.md` | Keep the explicit hierarchy: current assessment material overrides all general context. Include MIB context because the target programme is fixed. |
+| `workflows/01_Assignment_Essay_and_Report.md` | `Assignment_Analysis.md`; `Project_Lifecycle.md`; `Draft_Review.md`; `Assessment_Review.md`; `Management_and_IB_Analysis.md` | Composite route for brief analysis, essay/report planning, drafting support, revision and audit. It must state that essay/report are composite routes, not original standalone workflows. |
 | `workflows/02_Source_Analysis.md` | `Literature_Analysis.md`; `Literature_Input_Pipeline.md` | Keep source analysis and verification together. |
 | `workflows/03_Literature_Review.md` | `Literature_Search_and_Synthesis.md` | Keep independent due to search-mode, screening and defensible-gap rules. |
 | `workflows/04_Methodology_Planning.md` | `Research_Design.md` | Keep independent due to question–method–ethics fit. |
@@ -38,7 +38,8 @@ All export documents must retain their source path(s), preserve rule precedence,
 | `workflows/06_Chinese_to_English_Drafting.md` | `Chinese_to_English_Drafting.md` | Optional. Include only if the user approves bilingual support. |
 | `knowledge/Critical_Analysis_and_Academic_Writing.md` | `Criticality_and_Academic_English.md`; `Criticality_Model.md`; `POL-020_Criticality.md` | Merge attributed sections while retaining the distinction between diagnostic lens, learning toolkit and policy. This is not to be labelled a formal UK MSc Writing Standard. |
 | `knowledge/Research_Methods_Foundations.md` | `Methods_and_Statistics_Foundations.md` | Copy as a bounded preparatory guide; link users back to methodology workflow and ethics/supervisor requirements. |
-| `knowledge/Management_and_IB_Foundations.md` | `Management_and_International_Business_Foundations.md` | Optional; include only for MIB-focused pack. |
+| `knowledge/Management_and_IB_Foundations.md` | `Management_and_International_Business_Foundations.md` | Include because the target programme is MIB MSc; retain its foundation-only status. |
+| `knowledge/Sheffield_Harvard_Referencing_Guide.docx` | `05_projects/pre_arrival_foundation/materials/harvard.docx` | Copy the unique canonical Harvard guide as a standalone file; do not reformat, summarise, or merge its source-type examples. Record: University of Sheffield, last reviewed Summer 2025, and mandatory freshness check against the University Library referencing page before export. |
 | `templates/Academic_Output.md` | `Academic_Output.md` | Copy independently. |
 | `templates/Assignment_Brief_Analysis.md` | `Assignment_Brief_Analysis.md` | Copy independently. |
 | `templates/Argument_and_Paragraph.md` | `Argument_Map.md`; `Paragraph_Argument.md` | Merge as two named templates. |
@@ -54,9 +55,9 @@ All export documents must retain their source path(s), preserve rule precedence,
 ## Files that must not enter the pack
 
 - All original files remain in place; nothing is moved or deleted.
-- Do not include `05_projects/`, `06_memory/`, `scripts/`, `tests/`, `07_quality_control/test_cases/`, module registry, release logs, Git guidance, operational-readiness report, or garbled untracked conversation notes.
+- Do not include `05_projects/` except the unique canonical Harvard guide `05_projects/pre_arrival_foundation/materials/harvard.docx`; do not include `06_memory/`, `scripts/`, `tests/`, `07_quality_control/test_cases/`, module registry, release logs, Git guidance, operational-readiness report, or garbled untracked conversation notes.
 - Do not include current or future briefs, rubrics, handbooks, lecturer/supervisor feedback, submissions, personal reflections, research data, interview material, confidential company material, or licensed full-text readings as default pack knowledge.
-- Do not include a Harvard guide until an approved source is supplied.
+- Do not include `00_system/How_to_Use_SAIS.md`; it is explicitly Not Included in this MVP.
 
 ## Merge versus keep-separate rules
 
@@ -67,6 +68,8 @@ All export documents must retain their source path(s), preserve rule precedence,
 - Criticality policy, model and learning toolkit into a clearly labelled critical-analysis/writing knowledge file.
 - Closely related record templates into small labelled bundles, keeping each source template visually distinct.
 
+The repository remains modular throughout. Composite documents are an export-only packaging choice and must always identify their original source files.
+
 ### Keep separate in the export
 
 - Literature review: its reproducibility and gap-claim rules must remain visible.
@@ -74,7 +77,8 @@ All export documents must retain their source path(s), preserve rule precedence,
 - Dissertation tracks: academic research and managerial problem solving must not be conflated.
 - Auditor, Challenger and Examiner Review: they test different failure modes.
 - Submission Readiness: final checklist should remain identifiable even if bundled with the assessment ledger.
-- Institutional MIB context: optional and explicitly subordinate to current official assessment materials.
+- The Sheffield Harvard guide: keep standalone as the unique canonical formatting source; do not dilute it into a composite.
+- Institutional MIB context: included for this target programme and explicitly subordinate to current official assessment materials.
 
 ## Minimum viable pack
 
@@ -85,9 +89,10 @@ The smallest usable version requires:
 3. Workflows for assignment/essay/report, source analysis, literature review, methodology planning and dissertation planning.
 4. Templates for brief analysis, argument/paragraphs, source notes, search/synthesis/claim-evidence, methodology/dissertation, assessment evidence and submission readiness.
 5. Auditor, Challenger and Examiner Review.
+6. `knowledge/Sheffield_Harvard_Referencing_Guide.docx` as the unique canonical Harvard guide.
 
-The pack should mark Harvard formatting as an unresolved gap, require user-supplied current brief/rubric/AI policy before assessed drafting, and treat all Sheffield/programme material as subordinate to those current official materials.
+The pack should require a freshness check of the canonical Harvard guide against the University Library referencing page before packaging, require user-supplied current brief/rubric/AI policy before assessed drafting, and treat all Sheffield/programme material as subordinate to those current official materials. AOCOM remains out of scope because its expected source module is absent; no existing MVP workflow is dependent on it.
 
 ## Build validation for the next stage
 
-Before any export is made, verify that each composite file has a source map, has not changed the source meaning, contains no private/project material, uses readable UTF-8, and does not claim coverage for Harvard formatting, AOCOM, or genre-specific rules that are not currently present.
+Before any export is made, verify that each composite file has a source map, has not changed the source meaning, contains no private/project material, uses readable UTF-8, and is clearly export-only. Verify that `harvard.docx` is still current against the University Library referencing page before copying it. Do not claim AOCOM-specific or genre-specific rules that are not currently present.

@@ -4,9 +4,11 @@
 
 - Audit date: 26 July 2026.
 - Scope: all 114 Markdown files in the repository, plus the repository status and top-level module layout. No source file was changed during the audit.
+- Targeted correction on 26 July 2026: direct checks of `00_Academic_Constitution`, `01.5_AOCOM`, and Harvard-named files; one Harvard DOCX was read for title, authority, scope, and review date.
+- Target Institution: The University of Sheffield. Target Programme: Management and International Business MSc.
 - Repository state at audit start: 112 tracked Markdown files and two untracked files: `00_system/How_to_Use_SAIS.md` and `00_system/SAIS_Usage_Conversation_Notes.md`.
 - Formal SAIS module directories: `00_system`, `01_governance`, `02_institution`, `03_knowledge`, `03_workflows`, `04_templates`, `05_projects`, `06_memory`, and `07_quality_control`. The architecture assigns a distinct ownership boundary to each; `05_projects` is project state rather than reusable knowledge.
-- No file is named **Academic Constitution**, **AOCOM**, **Essay Workflow**, **Report Workflow**, **Harvard Guide**, or **UK MSc Writing Standard**. These are gaps, not alternate filenames.
+- Neither expected root location, `00_Academic_Constitution` nor `01.5_AOCOM`, exists. No standalone Essay Workflow, Report Workflow, or UK MSc Writing Standard was found. A University of Sheffield Harvard guide was found and is recorded below.
 
 `Canonical` below means the recommended authoritative source for the proposed MVP, based on the repository's ownership and precedence rules. It does not change the status of the original file. `Duplicate` means a substantive duplicate, not merely overlapping coverage.
 
@@ -18,8 +20,9 @@
 | Mission | `00_system/Mission.md` | Coaching-first, evidence-led purpose | Yes | Yes | No | No | No | Yes | core | Compact purpose statement. |
 | Architecture | `00_system/SAIS_Architecture.md` | Module ownership and durable-state model | Yes | Yes | No | No | No | Yes, distilled | core | Retain ownership/precedence; omit Codex-native implementation detail. |
 | Data Governance | `00_system/Data_Governance.md` | Privacy and material-handling classification | Yes | Yes | No | No | No | Yes | core | Essential upload and prompt privacy boundary. |
+| Sheffield Harvard Referencing Guide | `05_projects/pre_arrival_foundation/materials/harvard.docx` | University of Sheffield Harvard style guide, including citations and source-type examples | Yes | Yes | No | No | No | Yes | knowledge | **Unique canonical Harvard guide for this MVP.** Last reviewed: Summer 2025; adapted from *Cite Them Right*, 10th revised and expanded edition. It states that Sheffield supports this Harvard style and directs users to the University Library page for the latest version. |
 | Onboarding Checklist | `00_system/Onboarding_Checklist.md` | Readiness and task-start checklist | Yes | Yes | No | No | No | Optional | core | Useful, but not minimum task-handling rule. |
-| How to Use SAIS | `00_system/How_to_Use_SAIS.md` | Practical prompts for brief, research, drafting, review and audit | No—untracked | Yes | Partial overlap | No | No | Yes, review first | core | Clear MVP-oriented guide, but untracked; approve or formalise before treating as canonical. |
+| How to Use SAIS | `00_system/How_to_Use_SAIS.md` | Practical prompts for brief, research, drafting, review and audit | No—untracked | Yes | Partial overlap | No | No | No | exclude | Explicitly not included in the MVP, regardless of its usefulness or untracked status. |
 | Usage Conversation Notes | `00_system/SAIS_Usage_Conversation_Notes.md` | Token-use notes and conversation examples | No—untracked | Unclear | Partial overlap | Yes | No | No | exclude | Garbled character rendering and substantial overlap with `How_to_Use_SAIS.md`; do not upload. |
 | Operational Readiness | `00_system/Operational_Readiness.md` | v1.4 operational assessment and boundaries | Yes | Stale | No | No | Superseded in part | No | exclude | States v1.4 while `Version.md` is v1.6; internal release record, not student knowledge. |
 | Module Registry | `00_system/registries/Module_Registry.md` | Registry of SAIS module ownership | Yes | Yes | No | No | No | No | exclude | Runtime/maintenance metadata. |
@@ -103,6 +106,8 @@
 
 ## Project, memory, and test material — explicitly excluded from upload
 
+The sole exception is `05_projects/pre_arrival_foundation/materials/harvard.docx`, listed above as the canonical University of Sheffield Harvard guide. Its location is project-local, but its content is institution-wide referencing guidance rather than student project work.
+
 | File(s) | Relative path | Purpose | Canonical | Active | Duplicate | Draft | Deprecated | Pack? | Suggested class | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Project README | `05_projects/README.md` | Local project-folder guidance | Yes, local | Yes | No | No | No | No | exclude | Project-local navigation. |
@@ -167,15 +172,15 @@ The following rows make the exclusions above explicit at file level. Their group
 
 | Requested item | Finding |
 |---|---|
-| Academic Constitution | **Absent by name.** Closest sources: `AGENTS.md`, `01_governance/Policy_Charter.md`, and `01_governance/Academic_Integrity.md`. |
+| Academic Constitution | **Absent at the expected root location:** `00_Academic_Constitution/`. Closest current sources: `AGENTS.md`, `01_governance/Policy_Charter.md`, `Academic_Integrity.md`, `Evidence_and_Uncertainty.md`, `Quality_Gates.md`, and `AI_Use_in_Assessment.md`. See the targeted absence analysis below. |
 | Governance and Policy | `01_governance/Policy_Charter.md`; `Academic_Integrity.md`; `AI_Use_in_Assessment.md`; `Evidence_and_Uncertainty.md`; `Quality_Gates.md`; `policies/POL-001_Integrity.md`; `POL-020_Criticality.md`; `POL-030_Citation_Discipline.md`. |
-| AOCOM | **Absent.** No file or defined acronym was found. |
+| AOCOM | **Absent at the expected root location:** `01.5_AOCOM/`. No current repository document defines or links to the acronym. See the targeted absence analysis below. |
 | Essay Workflow | **Absent as a standalone workflow.** Use `03_workflows/Assignment_Analysis.md`, `Draft_Review.md`, `Assessment_Review.md`, and `Project_Lifecycle.md`. |
 | Report Workflow | **Absent as a standalone workflow.** Same route as essay, with `Management_and_IB_Analysis.md` when relevant. |
 | Literature Review Workflow | `03_workflows/Literature_Search_and_Synthesis.md`; supporting `Literature_Analysis.md` and `Literature_Input_Pipeline.md`. |
 | Dissertation Workflow | `03_workflows/Dissertation.md`; tracks in `03_workflows/dissertation_tracks/`. |
 | Methodology Workflow | `03_workflows/Research_Design.md`; supporting `04_templates/research/Methodology_Audit.md`. |
-| Harvard Guide | **Absent.** Closest rules: `01_governance/policies/POL-030_Citation_Discipline.md`, `04_templates/Source_Verification_Log.md`, and the citation gates in `Submission_Readiness.md`. |
+| Harvard Guide | **Present:** `05_projects/pre_arrival_foundation/materials/harvard.docx`. It is the unique canonical guide for this MVP; supporting controls remain `POL-030_Citation_Discipline.md`, `Source_Verification_Log.md`, and `Submission_Readiness.md`. |
 | UK MSc Writing Standard | **Absent.** Closest source: `03_knowledge/academic_skills/Criticality_and_Academic_English.md`; it is a toolkit, not a formal UK MSc standard. |
 | Critical Analysis Guide | **No file with that title.** Closest sources: `Criticality_and_Academic_English.md`, `Criticality_Model.md`, and `POL-020_Criticality.md`. |
 | Research Methods Guide | **No file with that title.** Closest source: `03_knowledge/research_methods/Methods_and_Statistics_Foundations.md`; primary workflow is `Research_Design.md`. |
@@ -189,10 +194,25 @@ The following rows make the exclusions above explicit at file level. Their group
 | Claim–Evidence rules | `01_governance/Evidence_and_Uncertainty.md`; `POL-030_Citation_Discipline.md`; `04_templates/research/Claim_Evidence_Matrix.md`; `Assessment_Evidence_Ledger.md`. |
 | Submission Checklist | `04_templates/Submission_Readiness.md`; supported by `03_workflows/Project_Lifecycle.md` and the three QC files. |
 
+## Targeted absence analysis: Academic Constitution and AOCOM
+
+| Item | Expected location | Traceable references | Why it appeared in the prior MVP specification | Workflow impact |
+|---|---|---|---|---|
+| Academic Constitution | `00_Academic_Constitution/` at repository root | No current repository file names, links, or defines this location. The closest governing sources are `AGENTS.md`, `01_governance/Policy_Charter.md`, `Academic_Integrity.md`, `Evidence_and_Uncertainty.md`, `Quality_Gates.md`, and `AI_Use_in_Assessment.md`. | It was named as an expected formal module in the MVP Audit Review/request, not discovered as a current repository source. | No existing workflow has a broken file link. However, all student-facing routes depend on its distributed rules: Task Router/Workflow Contract, Assignment Analysis, Draft Review, Assessment Review, Literature workflows, Research Design, Dissertation, Project Lifecycle, and all three quality-control workflows. Until a source is recovered, the export must use an explicitly attributed composite of the current governing files, not represent that composite as an original Constitution. |
+| AOCOM | `01.5_AOCOM/` at repository root | No current repository file names, links, or defines this location or acronym. The only traceable reference in scope is the MVP Audit Review/request that asked for its location. | It was named as an expected formal module in the MVP Audit Review/request, not discovered as a current repository source. | No existing workflow currently references AOCOM, so the requested MVP capabilities have no demonstrated broken dependency. Any AOCOM-specific policy, template, or routing capability must remain out of scope until its authoritative source is restored; no user interpretation is required for this audit correction. |
+
+## Harvard guide comparison and canonical decision
+
+No second Harvard guide was found in the targeted Harvard check. The comparison therefore has one candidate.
+
+| File | Path | Version / review status | Purpose | Recommendation and rationale |
+|---|---|---|---|---|
+| `harvard.docx` | `05_projects/pre_arrival_foundation/materials/harvard.docx` | No numbered version; **Last reviewed: Summer 2025**. The document says its guidance is updated regularly and points to the University Library referencing page for the latest version. | University of Sheffield Harvard guide: author-date citation, reference-list rules, quotation/paraphrase guidance, and examples for many source types. It states that this is the Harvard style supported by the University of Sheffield and that it is adapted from *Cite Them Right* (10th revised and expanded edition). | **Adopt as the unique canonical Harvard Guide for the MVP.** It is institution-specific, comprehensive, and more authoritative for formatting than the repository's general citation-integrity rules. Retain it as a standalone source in a future export and perform a freshness check against the University Library page before packaging. |
+
 ## Duplicate, draft, and deprecated findings
 
 - No byte-identical Markdown duplicates were found.
 - No files are explicitly labelled `deprecated`, `backup`, `archive`, `old`, or versioned copies.
-- `00_system/How_to_Use_SAIS.md` and `00_system/SAIS_Usage_Conversation_Notes.md` are untracked. The former is a useful candidate guide; the latter is an untracked, garbled, overlapping working note and should be excluded.
+- `00_system/How_to_Use_SAIS.md` and `00_system/SAIS_Usage_Conversation_Notes.md` are untracked. Both are excluded from this MVP; the former is explicitly Not Included and the latter is garbled/overlapping.
 - There are substantive overlaps rather than duplicates: Academic Integrity/POL-001, Citation Discipline/Source Verification/Submission Readiness, criticality policy/model/toolkit, and the MIB reference/profile/institutional model.
 - `00_system/Operational_Readiness.md` is not marked deprecated, but its stated v1.4 baseline is stale against v1.6 and should not be uploaded.
